@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="V_Qg6HnwKkG_cgQe2ioUcQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="docs.google.com/forms/d/e/1FAIpQLSeoKSI_tFa08fSjiQJML-r9aHCo-3KEQZQ9-BmALkKmxdLdHQ/viewform" DesignTimeRectangle="322, 365, 254, 30" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='email' /&gt;" Guid="49744b52-55f8-4ac0-a42a-c1d54ada7557" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Contact information' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="3ed9dacad58d881079fb15c5bd441f1f.jpg" xmlns="">0ob4JEpxoHkW4RsE750l3sA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

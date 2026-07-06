@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge Contact information",
+  "Type": "Screen",
+  "Id": "zMxRBhWOU0-s9PX0RrmwQw",
+  "Reference": "dJP-C991x0uW_8S9fibERA/zMxRBhWOU0-s9PX0RrmwQw",
+  "ParentRef": "dJP-C991x0uW_8S9fibERA/aeL-iOTenECMXCcU9YjJgw",
+  "Created": "2026-07-01T11:18:25.7213176Z",
+  "Updated": "2026-07-01T11:18:25.7213176Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

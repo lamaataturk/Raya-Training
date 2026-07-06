@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="UmImF6-snEqoWQFMQfP7Sg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="docs.google.com/forms/d/e/1FAIpQLSeoKSI_tFa08fSjiQJML-r9aHCo-3KEQZQ9-BmALkKmxdLdHQ/viewform" DesignTimeRectangle="511, 337, 95, 45" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' tag='SPAN' /&gt;" Guid="6e1de797-141a-41aa-9ccf-dee344a39c09" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Contact information' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="686c5268c76523c347fe50be93c3dcf7.jpg" xmlns="">0Fp4ZH3uWB0aIQGIB16B_ww</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
