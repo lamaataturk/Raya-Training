@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Invoice>
+	<Header>
+		<InvoiceNumber>INV-202402</InvoiceNumber>
+		<Date>2026-07-03</Date>
+	</Header>
+	<Customer>
+		<Name>Customer 2 LLC</Name>
+		<TaxID>TAX-43957</TaxID>
+	</Customer>
+	<Items>
+		<Item>
+			<Description>Service Component 1</Description>
+			<Quantity>5</Quantity>
+			<UnitPrice>350.53</UnitPrice>
+		</Item>
+		<Item>
+			<Description>Service Component 2</Description>
+			<Quantity>1</Quantity>
+			<UnitPrice>68.83</UnitPrice>
+		</Item>
+		<Item>
+			<Description>Service Component 3</Description>
+			<Quantity>3</Quantity>
+			<UnitPrice>285.4</UnitPrice>
+		</Item>
+		<Item>
+			<Description>Service Component 4</Description>
+			<Quantity>7</Quantity>
+			<UnitPrice>414.26</UnitPrice>
+		</Item>
+	</Items>
+	<TotalAmount>1119.02</TotalAmount>
+</Invoice>
