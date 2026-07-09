@@ -1,0 +1,341 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="RandomWeatherGenerator" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="RandomWeatherGenerator" sap:VirtualizedContainerService.HintSize="460.8,490.8566666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="str_Climate" />
+      <Variable x:TypeArguments="x:String" Name="str_Season" />
+      <Variable x:TypeArguments="x:String" Name="str_SupernaturalWeather" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="user input" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="416,327.2" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Season" OptionsString="Spring;Summer" Title="Choose Season" TopMost="False">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">
+            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">str_Season</CSharpReference>
+          </OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="416,327.2" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Climate" OptionsString="Cold;Warm" Title="Choose Climate" TopMost="False">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">
+            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">str_Climate</CSharpReference>
+          </OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_1">
+        <ui:LogMessage.Message>
+          <InArgument x:TypeArguments="x:Object">
+            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">str_Season</CSharpValue>
+          </InArgument>
+        </ui:LogMessage.Message>
+      </ui:LogMessage>
+    </Sequence>
+    <Sequence DisplayName="enter user data" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome donjon; Random Weather Generator" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,1094.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="412effa4-1127-4dce-ba82-75342e3cfe35" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,900" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NSelectItem DisplayName="Select Item 'Climate'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194.4" sap2010:WorkflowViewState.IdRef="NSelectItem_1" ScopeIdentifier="412effa4-1127-4dce-ba82-75342e3cfe35" Version="V5">
+                <uix:NSelectItem.Item>
+                  <InArgument x:TypeArguments="x:String">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">str_Climate</CSharpValue>
+                  </InArgument>
+                </uix:NSelectItem.Item>
+                <uix:NSelectItem.Items>
+                  <scg:List x:TypeArguments="x:String" Capacity="3">
+                    <x:String>Cold</x:String>
+                    <x:String>Temperate</x:String>
+                    <x:String>Warm</x:String>
+                  </scg:List>
+                </uix:NSelectItem.Items>
+                <uix:NSelectItem.Target>
+                  <uix:TargetAnchorable BrowserURL="donjon.bin.sh/d20/weather" ContentHash="6HWyzuLXbU28aFDkRIFvEA" DesignTimeRectangle="297, 328, 160, 30" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='' aaname='Climate:' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="9ab588a1-0994-4e4d-bc93-6cdcdb365180" InformativeScreenshot="411145000e682bba51d2c5a8b3178b9a.jpg" Reference="01thPlLEjkunQSbdIXCmXA/5EJoEfyJX0iMxCbmax_9JQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='donjon; Random Weather Generator' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="184, 333, 83, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Climate:' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Climate:' /&gt;" Guid="ec2e1815-fe49-4083-ab87-dc44182f0faa" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NSelectItem.Target>
+              </uix:NSelectItem>
+              <uix:NSelectItem DisplayName="Select Item 'Season'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194.4" sap2010:WorkflowViewState.IdRef="NSelectItem_2" ScopeIdentifier="412effa4-1127-4dce-ba82-75342e3cfe35" Version="V5">
+                <uix:NSelectItem.Item>
+                  <InArgument x:TypeArguments="x:String">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">str_Season</CSharpValue>
+                  </InArgument>
+                </uix:NSelectItem.Item>
+                <uix:NSelectItem.Items>
+                  <scg:List x:TypeArguments="x:String" Capacity="4">
+                    <x:String>Spring</x:String>
+                    <x:String>Summer</x:String>
+                    <x:String>Autumn</x:String>
+                    <x:String>Winter</x:String>
+                  </scg:List>
+                </uix:NSelectItem.Items>
+                <uix:NSelectItem.Target>
+                  <uix:TargetAnchorable BrowserURL="donjon.bin.sh/d20/weather" ContentHash="AUO4ED8ls06kxzalNpeQDw" DesignTimeRectangle="297, 377, 160, 29" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aaname='Season:' tag='SELECT' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="bc414a6e-1849-4c44-b456-8ecebcec91e8" InformativeScreenshot="98f7b3a6a963d36f89fecb9024fd73a9.jpg" Reference="01thPlLEjkunQSbdIXCmXA/-MQ1191PLUqlcl5Zc4WykQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='donjon; Random Weather Generator' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="191, 382, 76, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Season:' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Season:' /&gt;" Guid="439b6a45-d2d8-4304-94b1-363f08fd8f55" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NSelectItem.Target>
+              </uix:NSelectItem>
+              <uix:NSelectItem DisplayName="Select Item 'Supernatural Weather?'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194.4" sap2010:WorkflowViewState.IdRef="NSelectItem_3" ScopeIdentifier="412effa4-1127-4dce-ba82-75342e3cfe35" Version="V5">
+                <uix:NSelectItem.Item>
+                  <InArgument x:TypeArguments="x:String">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">str_SupernaturalWeather</CSharpValue>
+                  </InArgument>
+                </uix:NSelectItem.Item>
+                <uix:NSelectItem.Items>
+                  <scg:List x:TypeArguments="x:String" Capacity="4">
+                    <x:String>No</x:String>
+                    <x:String>Rare</x:String>
+                    <x:String>Uncommon</x:String>
+                    <x:String>Common</x:String>
+                  </scg:List>
+                </uix:NSelectItem.Items>
+                <uix:NSelectItem.Target>
+                  <uix:TargetAnchorable BrowserURL="donjon.bin.sh/d20/weather" ContentHash="rMXI2li6N0mZrdW8DnJFFw" DesignTimeRectangle="297, 426, 160, 29" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aaname='Supernatural Weather?' tag='SELECT' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="2facd913-3134-4410-b709-0d0aa3194dc6" InformativeScreenshot="80bfa5d7be51bbc6bea85671cb914b0f.jpg" Reference="01thPlLEjkunQSbdIXCmXA/1f_nTLu3Z02SY_fs2WcEEA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='donjon; Random Weather Generator' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="44, 431, 223, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Supernatural Weather?' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Supernatural Weather?' /&gt;" Guid="e1164e2b-513e-448d-81f1-68f1fb0081e0" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NSelectItem.Target>
+              </uix:NSelectItem>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Generate'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,256.8" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="412effa4-1127-4dce-ba82-75342e3cfe35" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="donjon.bin.sh/d20/weather" ContentHash="an6NieSfXE2RqPfbA3B2kQ" DesignTimeRectangle="223, 484, 128, 36" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='button' /&gt;" Guid="9dc5a1ab-197f-4b4d-bfe4-c0c6b82827ca" InformativeScreenshot="03bc425d05edad6db318e06ae1f54318.jpg" Reference="01thPlLEjkunQSbdIXCmXA/0qWpDe6Kt0uExFru_pYC_g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='donjon; Random Weather Generator' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions Mode="TextChanges">
+                    <uix:VerifyExecutionOptions.Target>
+                      <uix:TargetAnchorable BrowserURL="donjon.bin.sh/d20/weather" ContentHash="WJ_d-ijDpUupudRdt95W8w" DesignTimeRectangle="306, 352, 351, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aaname='Clear' tag='DIV' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Clear' /&gt;" Guid="e9ad0b35-3359-4bac-8f85-b83f74b5fb7f" InformativeScreenshot="55ba3b0a88f54829a66db85b813ac5e1.jpg" Reference="01thPlLEjkunQSbdIXCmXA/7DQ2wa_oh0W7A32zZvozuw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='donjon; Random Weather Generator' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="-45, 352, 351, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='key' tag='DIV' type='' aaname='Description:' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Description:' /&gt;" Guid="950727d1-152e-408f-b600-705d9da465bf" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:VerifyExecutionOptions.Target>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.CloseMode>
+          <InArgument x:TypeArguments="uix:NAppCloseMode">
+            <CSharpValue x:TypeArguments="uix:NAppCloseMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">UiPath.UIAutomationNext.Enums.NAppCloseMode.Always</CSharpValue>
+          </InArgument>
+        </uix:NApplicationCard.CloseMode>
+        <uix:NApplicationCard.OCREngine>
+          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+            <ActivityFunc.Argument>
+              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+            </ActivityFunc.Argument>
+          </ActivityFunc>
+        </uix:NApplicationCard.OCREngine>
+        <uix:NApplicationCard.OpenMode>
+          <InArgument x:TypeArguments="uix:NAppOpenMode">
+            <CSharpValue x:TypeArguments="uix:NAppOpenMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen</CSharpValue>
+          </InArgument>
+        </uix:NApplicationCard.OpenMode>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-9, -9, 661, 1060" BrowserType="Chrome" ContentHash="jhCoV0UdfUu9p6Ru_03oZA" IconBase64="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" InformativeScreenshot="1cf8f30d7702b323de49fb429b0db318.jpg" Reference="01thPlLEjkunQSbdIXCmXA/pCwlt-Ra9UCy8NA5CdtXJQ" Selector="&lt;html app='chrome.exe' title='donjon; Random Weather Generator' /&gt;" Url="https://donjon.bin.sh/d20/weather/" Version="V3">
+            <uix:TargetApp.Arguments>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.Arguments>
+            <uix:TargetApp.WorkingDirectory>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.WorkingDirectory>
+          </uix:TargetApp>
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+    <Sequence DisplayName="Extraction Data" sap:VirtualizedContainerService.HintSize="449.6,48" sap2010:WorkflowViewState.IdRef="Sequence_5">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome RPA Session 3 - Group A-20260707 1128-" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,562.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="fb419424-8eac-46d3-9dc8-df24be503981" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,368" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="str_Result" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NGetText DisplayName="Get Text 'Description: Clear Temp…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,142.4" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="fb419424-8eac-46d3-9dc8-df24be503981" Version="V5">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="donjon.bin.sh/d20/weather" ContentHash="FqnqTmluGUmjo6tXtfwbLQ" DesignTimeRectangle="-130, 1015, 716, 343" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;x-meta&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='4' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='' tag='DIV' aaname='            ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="7c59293e-2a9a-479d-88e4-9aa387cdc3ba" InformativeScreenshot="7ad6508b88a332e2bb6e2648847deb8e.jpg" Reference="01thPlLEjkunQSbdIXCmXA/GEWhbmhPY0GdcDQJ4BBZTg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='donjon; Random Weather Generator' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="-131, 423, 718, 584" FuzzySelectorArgument="&lt;webctrl class='statblock' tag='DIV' type='' aaname='  ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Description:&amp;#xA;Clear&amp;#xA;Temperature:&amp;#xA;Cold&amp;#xA;High:&amp;#xA;17°F (-9°C)&amp;#xA;Low:&amp;#xA;3°F (-17°C)&amp;#xA;Relative:&amp;#xA;Warmer than normal&amp;#xA;Wind Force:&amp;#xA;Light&amp;#xA;Wind Speed:&amp;#xA;7 mph (11 kph)' /&gt;" Guid="3225e6e7-2370-4693-a510-a4e134c9cd7a" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+                <uix:NGetText.TextString>
+                  <OutArgument x:TypeArguments="x:String">
+                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">str_Result</CSharpReference>
+                  </OutArgument>
+                </uix:NGetText.TextString>
+              </uix:NGetText>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_2">
+                <ui:LogMessage.Message>
+                  <InArgument x:TypeArguments="x:Object">
+                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">str_Result</CSharpValue>
+                  </InArgument>
+                </ui:LogMessage.Message>
+              </ui:LogMessage>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.OCREngine>
+          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+            <ActivityFunc.Argument>
+              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+            </ActivityFunc.Argument>
+          </ActivityFunc>
+        </uix:NApplicationCard.OCREngine>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-9, -9, 661, 1060" BrowserType="Chrome" ContentHash="XeGJBMS010qkM-Q0cL7R5w" IconBase64="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" InformativeScreenshot="4b459b5d3454d4e3f35dd1f595ea1f29.jpg" Reference="01thPlLEjkunQSbdIXCmXA/zX4AMjGCI0ShbAj_jvmlTg" Selector="&lt;html app='chrome.exe' title='donjon; Random Weather Generator' /&gt;" Url="https://donjon.bin.sh/d20/weather/" Version="V3" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

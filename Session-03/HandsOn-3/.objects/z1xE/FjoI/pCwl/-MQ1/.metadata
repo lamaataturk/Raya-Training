@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Season",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "-MQ1191PLUqlcl5Zc4WykQ",
+  "Reference": "01thPlLEjkunQSbdIXCmXA/-MQ1191PLUqlcl5Zc4WykQ",
+  "ParentRef": "01thPlLEjkunQSbdIXCmXA/pCwlt-Ra9UCy8NA5CdtXJQ",
+  "Created": "2026-07-09T02:49:19.1941241Z",
+  "Updated": "2026-07-09T02:49:19.1941241Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

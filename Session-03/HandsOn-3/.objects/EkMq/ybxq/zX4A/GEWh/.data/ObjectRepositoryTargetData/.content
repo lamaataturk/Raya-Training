@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FqnqTmluGUmjo6tXtfwbLQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="donjon.bin.sh/d20/weather" DesignTimeRectangle="-130, 1015, 716, 343" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;x-meta&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='4' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='' tag='DIV' aaname='            ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="7c59293e-2a9a-479d-88e4-9aa387cdc3ba" ScopeSelectorArgument="&lt;html app='chrome.exe' title='donjon; Random Weather Generator' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="-131, 423, 718, 584" FuzzySelectorArgument="&lt;webctrl class='statblock' tag='DIV' type='' aaname='  ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Description:&amp;#xA;Clear&amp;#xA;Temperature:&amp;#xA;Cold&amp;#xA;High:&amp;#xA;17°F (-9°C)&amp;#xA;Low:&amp;#xA;3°F (-17°C)&amp;#xA;Relative:&amp;#xA;Warmer than normal&amp;#xA;Wind Force:&amp;#xA;Light&amp;#xA;Wind Speed:&amp;#xA;7 mph (11 kph)' /&gt;" Guid="3225e6e7-2370-4693-a510-a4e134c9cd7a" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7ad6508b88a332e2bb6e2648847deb8e.jpg" xmlns="">0zWyY2Ck2mEaFwMsK-7LZKw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

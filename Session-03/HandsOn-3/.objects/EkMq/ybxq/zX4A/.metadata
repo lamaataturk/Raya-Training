@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome RPA Session 3 - Group A-20260707 1128-",
+  "Type": "Screen",
+  "Id": "zX4AMjGCI0ShbAj_jvmlTg",
+  "Reference": "01thPlLEjkunQSbdIXCmXA/zX4AMjGCI0ShbAj_jvmlTg",
+  "ParentRef": "01thPlLEjkunQSbdIXCmXA/ybxqPSopRk2bzkeaDh5oDA",
+  "Created": "2026-07-09T03:05:00.2185479Z",
+  "Updated": "2026-07-09T03:05:00.2185479Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

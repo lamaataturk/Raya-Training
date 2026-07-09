@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Description Clear Temp…",
+  "Type": "Element",
+  "Id": "GEWhbmhPY0GdcDQJ4BBZTg",
+  "Reference": "01thPlLEjkunQSbdIXCmXA/GEWhbmhPY0GdcDQJ4BBZTg",
+  "ParentRef": "01thPlLEjkunQSbdIXCmXA/zX4AMjGCI0ShbAj_jvmlTg",
+  "Created": "2026-07-09T03:07:37.9094204Z",
+  "Updated": "2026-07-09T03:07:37.9094204Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
