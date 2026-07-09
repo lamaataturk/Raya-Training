@@ -1,0 +1,47 @@
+{
+  "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
+  "entryPoints": [
+    {
+      "filePath": "Flowchart.xaml",
+      "uniqueId": "94b193b5-770c-4351-8c85-371574d8147e",
+      "type": "process",
+      "input": {
+        "type": "object",
+        "properties": {
+          "in_OutputFolderPath": {
+            "type": "string",
+            "x-default-expression": "@\"C:\\Users\\DELL\\Desktop\\Raya\\Session 2\\output\"",
+            "default": "C:\\Users\\DELL\\Desktop\\Raya\\Session 2\\output"
+          },
+          "in_InputFolderPath": {
+            "type": "string",
+            "x-default-expression": "@\"C:\\Users\\DELL\\Desktop\\Raya\\Session 2\\input\"",
+            "default": "C:\\Users\\DELL\\Desktop\\Raya\\Session 2\\input"
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "412c8a7d-dd6a-4a86-8ce5-95cc207ed7eb",
+      "type": "process",
+      "input": {
+        "type": "object",
+        "properties": {
+          "in_OutputFolderPath": {
+            "type": "string",
+            "x-default-expression": "@\"C:\\Users\\DELL\\Desktop\\Raya\\Session 2\\output\"",
+            "default": "C:\\Users\\DELL\\Desktop\\Raya\\Session 2\\output"
+          },
+          "in_InputFolderPath": {
+            "type": "string",
+            "x-default-expression": "@\"C:\\Users\\DELL\\Desktop\\Raya\\Session 2\\input\"",
+            "default": "C:\\Users\\DELL\\Desktop\\Raya\\Session 2\\input"
+          }
+        },
+        "required": []
+      }
+    }
+  ]
+}
