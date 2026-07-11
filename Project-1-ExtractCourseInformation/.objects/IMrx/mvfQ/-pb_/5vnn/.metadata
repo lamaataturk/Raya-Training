@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Teaching & AcademicsMat…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "5vnnsLR8p0Wr6ddCLtjpGg",
+  "Reference": "QKVIHkXsPEqgGUEety4wYA/5vnnsLR8p0Wr6ddCLtjpGg",
+  "ParentRef": "QKVIHkXsPEqgGUEety4wYA/-pb_rF2Zf0mbffl_7dLMBg",
+  "Created": "2026-07-09T11:51:28.9930254Z",
+  "Updated": "2026-07-09T11:51:28.9930254Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="jLey5HY3wEuZD93wwsQhhg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="udemy.com/course/complete-ai-guide" DesignTimeRectangle="1422, 558, 174, 33" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='_title-price_1oox9_69' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="edcf26c4-7a26-4eba-ad50-d8c65fd6bb61" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='usi_last_url_1=https://www.udemy.com/course/complete-ai-guide/?couponCodeUSIEQLSUDEAFFHP22025=1783621454522;usi_pv_count=26=1783621454522;usi_subtotal==1784204655558;usi_pids=5170404=1784204655558;usi_prod_name_1=The Complete AI Guide: Learn ChatGPT, Claud*' title='The Complete AI Guide: Learn ChatGPT, Claude &amp;amp; Generative AI' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="c0a18f5696ae52e782c0d8b2fcef8936.jpg" xmlns="">0WWMonfLA-kWB75IcZ6MaCg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

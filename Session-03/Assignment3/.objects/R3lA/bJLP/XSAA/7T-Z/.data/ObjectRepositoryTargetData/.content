@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="zS0XYHt4JEK99swkKwCCVQ" Reference="df64UZAu2kuzMRmJDFPW3Q/7T-ZFqZJEUWhesxYy0OmxA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="accuweather.com/en/search-locations" DesignTimeRectangle="359, 307, 790, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='location-name' tag='P' /&gt;" Guid="2f09ad61-0efc-4e6d-be45-c139753aeca4" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Find Your Location&amp;apos;s Weather Forecast | AccuWeather' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="5918f0f51e8b597fab935e213bb25c84.jpg" xmlns="">0F-q4Qns4hkOFVKRa_9_7Xw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PGMGaP92kk2Z1UU4Vhnlcw" Reference="QKVIHkXsPEqgGUEety4wYA/VqP2V9YTXk-IO3uVoRyg7g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="udemy.com/courses/search" DesignTimeRectangle="173, 866, 483, 54" ElementType="Text" ElementVisibilityArgument="Interactive" Guid="da3d5587-fdd6-4c07-a56b-2b01389df466" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='usi_last_url_1=https://www.udemy.com/courses/search/?srcUSIEQLSukw&amp;amp;qUSIEQLSai=1783621699252;usi_pv_count=29=1783621699253;' title='Search results | Udemy' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.FullSelectorArgument>
+        <p:InArgument x:TypeArguments="x:String">
+          <p:CSharpValue x:TypeArguments="x:String">string.Format("&lt;webctrl parentclass='ud-heading-lg card-title-module--title--bv1rZ ud-custom-focus-visible' idx='{0}' /&gt;", int_Idx)</p:CSharpValue>
+        </p:InArgument>
+      </TargetAnchorable.FullSelectorArgument>
+      <imageRef attrName="InformativeScreenshot" originalValue="b92e19526cdc10f2260f137d27988c6e.jpg" xmlns="">0nWPMHzp9T0iMx8VzzB0zVA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="1" Name="int_Idx" />
+    </scg:List>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

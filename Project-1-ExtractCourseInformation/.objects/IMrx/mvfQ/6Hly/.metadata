@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome The Complete AI Guide Learn ChatGPT, C",
+  "Type": "Screen",
+  "Id": "6HlyY7MGrUeDKJnDm1H0gQ",
+  "Reference": "QKVIHkXsPEqgGUEety4wYA/6HlyY7MGrUeDKJnDm1H0gQ",
+  "ParentRef": "QKVIHkXsPEqgGUEety4wYA/mvfQ0xqRIEaNiYJAMgrKeA",
+  "Created": "2026-07-09T12:26:07.4967927Z",
+  "Updated": "2026-07-09T12:26:07.4967927Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

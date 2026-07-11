@@ -1,0 +1,13 @@
+{
+  "Version": "1.0",
+  "IncludeWorkflows": [
+    "Main.xaml",
+    "Chrome-Udemy//Udemy_LaunchApp.xaml",
+    "Chrome-Udemy//Udemy_SearchCourses.xaml",
+    "Chrome-Udemy//Udemy_CloseApp.xaml",
+    "Chrome-Udemy//Udemy_RetrieveCourseData.xaml",
+    "Chrome-Udemy//Udemy_ShowLeastPriceCourses.xaml",
+    "NotePad//NotePad_SaveCoursesData.xaml",
+    "Control//Control_CheckToContinue.xaml"
+  ]
+}
