@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge The Complete AI Guide Learn ChatGPT, Cla",
+  "Type": "Screen",
+  "Id": "RQyFgEB3ZkGzW9p1Z-MnWw",
+  "Reference": "QKVIHkXsPEqgGUEety4wYA/RQyFgEB3ZkGzW9p1Z-MnWw",
+  "ParentRef": "QKVIHkXsPEqgGUEety4wYA/mvfQ0xqRIEaNiYJAMgrKeA",
+  "Created": "2026-07-15T19:31:03.7057516Z",
+  "Updated": "2026-07-15T19:31:03.7057516Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

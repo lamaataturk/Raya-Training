@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="5DqD25H-r029yarQN1r6yg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="O_VHcJAVDkyw22KNm-sQow" Reference="QKVIHkXsPEqgGUEety4wYA/5vnnsLR8p0Wr6ddCLtjpGg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="udemy.com/course/complete-ai-guide" DesignTimeRectangle="242, 323, 945, 88" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='course-lede-module-scss-module__D37FTG__title ud-heading-xxl' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="1ed0b4a1-ed44-41e2-8b97-f71f61ffa55c" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='usi_last_url_1=https://www.udemy.com/course/complete-ai-guide/?couponCodeUSIEQLSUDEAFFHP22025=1783621454522;usi_pv_count=26=1783621454522;usi_subtotal==1784204655558;usi_pids=5170404=1784204655558;usi_prod_name_1=The Complete AI Guide: Learn ChatGPT, Claud*' title='The Complete AI Guide: Learn ChatGPT, Claude &amp;amp; Generative AI' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="dcd06cf7574cd82fd801b78b6ee1cd5f.jpg" xmlns="">01ColUM5OiUmiIxTgnGVrsg</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="udemy.com/course/complete-ai-guide" DesignTimeRectangle="242, 370, 945, 88" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='course-lede-module-scss-module__D37FTG__title ud-heading-xxl' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="f77abca0-faf0-4365-9a92-8b1d4ae50d61" ScopeSelectorArgument="&lt;html app='msedge.exe' url='https://www.udemy.com/course*' idx='2' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="34, 193, 114, 42" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl aaname='Udemy' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' tag='IMG' /&gt;" Guid="754de456-8291-4472-8887-fd46ee50b7e3" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3eb214b1e3b5069d4d4ae30e57904bda.jpg" xmlns="">0j0IW0BxYh0ab2qd28dH_LA</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">GetText</x:String>
   </ObjectRepositoryTargetData.Data>

@@ -1,4 +1,9 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Udemy_SearchCourses" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Udemy_SearchCourses" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="out_strCourseSearchQuery" Type="OutArgument(x:String)" />
+  </x:Members>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -38,6 +43,7 @@
       <x:String>UiPath.UIAutomationNext.Models</x:String>
       <x:String>System.Reflection</x:String>
       <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -95,94 +101,137 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Udemy_SearchCourses" sap:VirtualizedContainerService.HintSize="763.6,981.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
-    <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="str_SearchQuery" />
-    </Sequence.Variables>
+  <Sequence DisplayName="Udemy_SearchCourses" sap:VirtualizedContainerService.HintSize="647.6,2073.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="451.2,273.6" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter course search query:" Title="Udemy Search" TopMost="False">
-      <ui:InputDialog.Result>
-        <OutArgument x:TypeArguments="x:String">
-          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">str_SearchQuery</CSharpReference>
-        </OutArgument>
-      </ui:InputDialog.Result>
-    </ui:InputDialog>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Udemy Online Courses for Skills, Caree" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,684.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="fe6acacb-27e2-4a35-9b90-eb2a5958d2c2" Version="V2">
-      <uix:NApplicationCard.Body>
-        <ActivityAction x:TypeArguments="x:Object">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-          </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,490.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT search-form-autoc…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="fe6acacb-27e2-4a35-9b90-eb2a5958d2c2" Version="V5">
-              <uix:NTypeInto.Target>
-                <uix:TargetAnchorable BrowserURL="udemy.com" ContentHash="yNgNbIKqo0WCXJAS7Hnk2w" DesignTimeRectangle="583, 201, 607, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='search-form-autocomplete--8' tag='INPUT' type='text' class='ud-text-input ud-text-input-small ud-text-sm ud-search-form-autocomplete-input js-header-search-field' placeholder='Search for anything' aaname='Search for anything' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="f151920b-7520-47b7-9573-cfc55936177a" InformativeScreenshot="7405b6123dea27651e37e8ebfc9c4c41.jpg" Reference="QKVIHkXsPEqgGUEety4wYA/I7p-gYOvj0yyoWbramz0dw" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='usi_last_url_1=https://www.udemy.com/?im_refUSIEQLSUD23U5yOrxyZR6701vXg7wOLUkuVkh1L1zw4UE0&amp;amp;utm_mediumUSIEQLSaffiliate&amp;amp;utm_sourceUSIEQLSimpact&amp;amp;utm_audienceUSIEQLSmx&amp;amp;utm_tacticUSIEQLS%22Content%22%2C%22ROW%22&amp;amp;utm_contentUSIEQLS3193860&amp;amp;irgwcUSIEQLS1&amp;amp;afsrcUSIE*' title='Udemy: Online Courses for Skills, Careers &amp;amp; AI' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
-                  <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                      <uix:Target DesignTimeRectangle="543, 193, 677, 58" ElementType="Container" FuzzySelectorArgument="&lt;webctrl tag='FORM' type='' class='ud-search-form-autocomplete-input-group ud-search-form-autocomplete-input-group-reversed' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="86a3c1de-60ed-472d-b15c-eccce2e3c6d3" SearchSteps="FuzzySelector" />
-                    </scg:List>
-                  </uix:TargetAnchorable.Anchors>
-                </uix:TargetAnchorable>
-              </uix:NTypeInto.Target>
-              <uix:NTypeInto.Text>
-                <InArgument x:TypeArguments="x:String">
-                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">str_SearchQuery</CSharpValue>
-                </InArgument>
-              </uix:NTypeInto.Text>
-              <uix:NTypeInto.VerifyOptions>
-                <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
-                  <uix:VerifyExecutionTypeIntoOptions.Retry>
-                    <InArgument x:TypeArguments="x:Boolean" />
-                  </uix:VerifyExecutionTypeIntoOptions.Retry>
-                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                    <InArgument x:TypeArguments="x:Double" />
-                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                </uix:VerifyExecutionTypeIntoOptions>
-              </uix:NTypeInto.VerifyOptions>
-            </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'use'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,184.8" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fe6acacb-27e2-4a35-9b90-eb2a5958d2c2" Version="V5">
-              <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="udemy.com" ContentHash="7TbNIrC9LEyG6BYWgT0rUw" DesignTimeRectangle="538, 197, 50, 50" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='ud-btn ud-btn-medium ud-btn-ghost ud-btn-text-sm ud-btn-disabled ud-btn-icon ud-btn-icon-medium' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="d18f8940-98a9-4dfd-b754-a9c3e2b54fcb" InformativeScreenshot="5004f7c380d4877a2d1b02adbf67d75a.jpg" Reference="QKVIHkXsPEqgGUEety4wYA/Dm0jJabW10uT7WxS5V0Brg" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='usi_last_url_1=https://www.udemy.com/=1783622063787;usi_pv_count=31=1783622063787;' title='Udemy: Online Courses for Skills, Careers &amp;amp; AI' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
-                  <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                      <uix:Target DesignTimeRectangle="583, 201, 607, 42" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='search-form-autocomplete--8' tag='INPUT' type='text' class='ud-text-input ud-text-input-small ud-text-sm ud-search-form-autocomplete-input js-header-search-field' placeholder='Search for anything' aaname='Search for anything' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="6e88d4b9-2341-4959-9209-0ae8642750e3" SearchSteps="FuzzySelector" />
-                    </scg:List>
-                  </uix:TargetAnchorable.Anchors>
-                </uix:TargetAnchorable>
-              </uix:NClick.Target>
-            </uix:NClick>
-          </Sequence>
-        </ActivityAction>
-      </uix:NApplicationCard.Body>
-      <uix:NApplicationCard.CloseMode>
-        <InArgument x:TypeArguments="uix:NAppCloseMode">
-          <CSharpValue x:TypeArguments="uix:NAppCloseMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">UiPath.UIAutomationNext.Enums.NAppCloseMode.Never</CSharpValue>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="520,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+      <ui:LogMessage.Message>
+        <InArgument x:TypeArguments="x:Object">
+          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">"Started Search Courses"</CSharpValue>
         </InArgument>
-      </uix:NApplicationCard.CloseMode>
-      <uix:NApplicationCard.OCREngine>
-        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
-          <ActivityFunc.Argument>
-            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
-          </ActivityFunc.Argument>
-        </ActivityFunc>
-      </uix:NApplicationCard.OCREngine>
-      <uix:NApplicationCard.OpenMode>
-        <InArgument x:TypeArguments="uix:NAppOpenMode">
-          <CSharpValue x:TypeArguments="uix:NAppOpenMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">UiPath.UIAutomationNext.Enums.NAppOpenMode.Never</CSharpValue>
+      </ui:LogMessage.Message>
+    </ui:LogMessage>
+    <Sequence sap:VirtualizedContainerService.HintSize="520,1710.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="486.4,273.6" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter course search query:" Title="Udemy Search" TopMost="False">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">
+            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">out_strCourseSearchQuery</CSharpReference>
+          </OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Udemy Online Courses for Skills, Caree" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486.4,1344.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="fe6acacb-27e2-4a35-9b90-eb2a5958d2c2" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,1150.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT search-form-autoc…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="fe6acacb-27e2-4a35-9b90-eb2a5958d2c2" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="udemy.com" ContentHash="6IY9X2rQZ0mdz9K4FJRXow" DesignTimeRectangle="588, 193, 597, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='search-form-autocomplete--1529' matching:id='fuzzy' fuzzylevel:id='0.0' tag='INPUT' type='text' class='ud-text-input ud-text-input-small ud-text-sm ud-search-form-autocomplete-input js-header-search-field' matching:class='fuzzy' fuzzylevel:class='0.0' placeholder='Search for anything' aaname='Search for anything' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="54a33fe9-dad3-4699-ac7f-9559266bc37f" InformativeScreenshot="fce1c8499285b9b66e170b7633436871.jpg" Reference="QKVIHkXsPEqgGUEety4wYA/I7p-gYOvj0yyoWbramz0dw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Udemy:*' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.Text>
+                  <InArgument x:TypeArguments="x:String">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">out_strCourseSearchQuery</CSharpValue>
+                  </InArgument>
+                </uix:NTypeInto.Text>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'use'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,193.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fe6acacb-27e2-4a35-9b90-eb2a5958d2c2" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="udemy.com" ContentHash="iJigtl6wi0CSquBzO-pnzg" DesignTimeRectangle="543, 189, 50, 50" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='ud-btn ud-btn-medium ud-btn-ghost ud-btn-text-sm ud-btn-disabled ud-btn-icon ud-btn-icon-medium' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="fa1c5889-72aa-4412-a976-d7ac63e36a98" InformativeScreenshot="a6f229ef2d1f75e03b5d5df7be7c1915.jpg" Reference="QKVIHkXsPEqgGUEety4wYA/Dm0jJabW10uT7WxS5V0Brg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Udemy:*' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NCheckState DisplayName="Check App State 'Sorry, we couldn't find…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="451.2,651.2" sap2010:WorkflowViewState.IdRef="NCheckState_1" IsLoose="True" Version="V5">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Warn">
+                      <ui:LogMessage.Message>
+                        <InArgument x:TypeArguments="x:Object">
+                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">"Courses Not Found for this Search"</CSharpValue>
+                        </InArgument>
+                      </ui:LogMessage.Message>
+                    </ui:LogMessage>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="udemy.com/courses/search" ContentHash="q-gG_Cs4gkKoKtoLmM_wfA" DesignTimeRectangle="152, 319, 1080, 33" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H1' type='' class='ud-heading-xl' aaname='Sorry, we couldn&amp;apos;t find any results for ' /&gt;" Guid="207ce652-2f19-4286-b8f6-23b5d0a8c08c" InformativeScreenshot="036d53d09096d37278325fed0f295492.jpg" Reference="QKVIHkXsPEqgGUEety4wYA/lrtPCDgci0KWSW0ljIwAzw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Search results | Udemy' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.CloseMode>
+          <InArgument x:TypeArguments="uix:NAppCloseMode">
+            <CSharpValue x:TypeArguments="uix:NAppCloseMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">UiPath.UIAutomationNext.Enums.NAppCloseMode.Never</CSharpValue>
+          </InArgument>
+        </uix:NApplicationCard.CloseMode>
+        <uix:NApplicationCard.OCREngine>
+          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+            <ActivityFunc.Argument>
+              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+            </ActivityFunc.Argument>
+          </ActivityFunc>
+        </uix:NApplicationCard.OCREngine>
+        <uix:NApplicationCard.OpenMode>
+          <InArgument x:TypeArguments="uix:NAppOpenMode">
+            <CSharpValue x:TypeArguments="uix:NAppOpenMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">UiPath.UIAutomationNext.Enums.NAppOpenMode.Never</CSharpValue>
+          </InArgument>
+        </uix:NApplicationCard.OpenMode>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-9, -9, 1938, 1060" BrowserType="Edge" ContentHash="xs0sNiyIrk2ILlb-BQC9qQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAADNklEQVRYR82Wz2sTQRTHc1NBvQmKN1EvolCaH9R6KApePbWx/gueFEE8qQgK4knwV7WUml8aehBjb0L9gYmWYhUVxIOHhmKT1nY32W2bpMn43uzb7O7sZDehRP3Ch25n3q/szM68QLuKR37vjAXV4URIeRgPKdOxkFKEv1WEnqeBkURQPT3av7iD3Dav8XDpYDysjEJwHWBtoseCyqNERD1AYTpXui+/DQLdAmq2wJ1SheJvjg2wrRS2PWHl4PxFCOYi2W8gmxPIxXr1PRTeW6ngSg+tqSxQk6nzOivn60xfqLPs5VWpjUA+GVk+Qmnkwl/ul/z5YInNZ2tM1MJMjU2eKUt9bOTHQtpuSucUrhMYfBIcmqRPqOz7kwprbFBGiRp1xn5OVtnESVUag5jB/UVpLcEEbjiZA0seVVil1KA0hjDZj4kKB5/tQlv0kcUyWLlKaQ3xT81jt6dgo9mFr/vFsPW6+bK8cy4L+thjOAgrZcdS0HcuNwbMAvw2nLkxUZ4FALDX7hrJ4YSDAc9DBl/n7J0136AI2qCt9xJwNH5i4vEqmfxbRAN0tssmuw4swwPc/XiJSA1MEhGFvTyrNUkdc39mOGa3QR/RRkIOC1gUBl2Ym9DUs1Mllw2O2dXOfgEKWEBFGHTRrQJgCdb/iwL++RL4bsIuFsA34Ygw6KJrBYSV+wHs4aSTNrpVQCKsDAbSh4rb4R9NnLSDXY9dmSF3AZlomWYNtXMUY25+H2ADKTFwUFuzruPsFfeFlLu2SrOMVbWGa17CCE+Ooh4QW2yZIafw0bpu9WKdX8HmXAaeVxetAn99qDl8JVTgCthH6Q1h9yoxbPL2kk7hDdWrjBVma5y60KG9uqBLY9i4QWktUUuWEwwdYEvmp2+P16W+NrK397MtlNYp7FLAYE5wcPDmos6Wvm442jB8Ln7eYFPnNKmPhTo/3re0l9LJha0zGOfdzk7Sx1X+NeD6Px3wbEJN5uK9y4cpjbfSPeVd4PBaCLAZsi3b8VbCdcLuFZw9zwgf8KK73nLN2xFWjg0kBOqkEA27HdenthnRiRnF8xt4D88FAH8hUuBjQeUeJB5qnnC+CgT+AO3suW1OmmBCAAAAAElFTkSuQmCC" InformativeScreenshot="e64e2ebba525b8a254e1066e35d1746d.jpg" Reference="QKVIHkXsPEqgGUEety4wYA/rYEgnuMvkUm1r-DAjZhKFQ" Selector="&lt;html app='msedge.exe' title='Udemy:*' /&gt;" Url="https://www.udemy.com/" Version="V3">
+            <uix:TargetApp.Arguments>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.Arguments>
+            <uix:TargetApp.WorkingDirectory>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.WorkingDirectory>
+          </uix:TargetApp>
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="520,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
+      <ui:LogMessage.Message>
+        <InArgument x:TypeArguments="x:Object">
+          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">"Finished Search Courses Successfully"</CSharpValue>
         </InArgument>
-      </uix:NApplicationCard.OpenMode>
-      <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="-9, -9, 1938, 1060" BrowserType="Chrome" ContentHash="UosZd5L66k2WhbyX6PI-RA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAADNklEQVRYR82Wz2sTQRTHc1NBvQmKN1EvolCaH9R6KApePbWx/gueFEE8qQgK4knwV7WUml8aehBjb0L9gYmWYhUVxIOHhmKT1nY32W2bpMn43uzb7O7sZDehRP3Ch25n3q/szM68QLuKR37vjAXV4URIeRgPKdOxkFKEv1WEnqeBkURQPT3av7iD3Dav8XDpYDysjEJwHWBtoseCyqNERD1AYTpXui+/DQLdAmq2wJ1SheJvjg2wrRS2PWHl4PxFCOYi2W8gmxPIxXr1PRTeW6ngSg+tqSxQk6nzOivn60xfqLPs5VWpjUA+GVk+Qmnkwl/ul/z5YInNZ2tM1MJMjU2eKUt9bOTHQtpuSucUrhMYfBIcmqRPqOz7kwprbFBGiRp1xn5OVtnESVUag5jB/UVpLcEEbjiZA0seVVil1KA0hjDZj4kKB5/tQlv0kcUyWLlKaQ3xT81jt6dgo9mFr/vFsPW6+bK8cy4L+thjOAgrZcdS0HcuNwbMAvw2nLkxUZ4FALDX7hrJ4YSDAc9DBl/n7J0136AI2qCt9xJwNH5i4vEqmfxbRAN0tssmuw4swwPc/XiJSA1MEhGFvTyrNUkdc39mOGa3QR/RRkIOC1gUBl2Ym9DUs1Mllw2O2dXOfgEKWEBFGHTRrQJgCdb/iwL++RL4bsIuFsA34Ygw6KJrBYSV+wHs4aSTNrpVQCKsDAbSh4rb4R9NnLSDXY9dmSF3AZlomWYNtXMUY25+H2ADKTFwUFuzruPsFfeFlLu2SrOMVbWGa17CCE+Ooh4QW2yZIafw0bpu9WKdX8HmXAaeVxetAn99qDl8JVTgCthH6Q1h9yoxbPL2kk7hDdWrjBVma5y60KG9uqBLY9i4QWktUUuWEwwdYEvmp2+P16W+NrK397MtlNYp7FLAYE5wcPDmos6Wvm442jB8Ln7eYFPnNKmPhTo/3re0l9LJha0zGOfdzk7Sx1X+NeD6Px3wbEJN5uK9y4cpjbfSPeVd4PBaCLAZsi3b8VbCdcLuFZw9zwgf8KK73nLN2xFWjg0kBOqkEA27HdenthnRiRnF8xt4D88FAH8hUuBjQeUeJB5qnnC+CgT+AO3suW1OmmBCAAAAAElFTkSuQmCC" InformativeScreenshot="74a55b4f6c1b9d3183c07b95b32091c1.jpg" Reference="QKVIHkXsPEqgGUEety4wYA/rYEgnuMvkUm1r-DAjZhKFQ" Selector="&lt;html app='chrome.exe' htmlwindowname='usi_last_url_1=https://www.udemy.com/*' title='Udemy*' /&gt;" Url="https://www.udemy.com/" Version="V3" />
-      </uix:NApplicationCard.TargetApp>
-    </uix:NApplicationCard>
+      </ui:LogMessage.Message>
+    </ui:LogMessage>
   </Sequence>
 </Activity>

@@ -2,9 +2,9 @@
   "Version": "1.0",
   "Metadata": [
     {
-      "ApplicationType": "Chrome",
+      "ApplicationType": "Edge",
       "ExecutablePath": {
-        "Value": "chrome.exe",
+        "Value": "msedge.exe",
         "IsExpression": false
       },
       "Url": {

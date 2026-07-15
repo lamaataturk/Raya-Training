@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MX+yHi1DJGU=",
+  "dgSpecHash": "7CSvUSVn6g0=",
   "success": true,
   "projectFilePath": "C:\\Users\\DELL\\Documents\\GitHub\\Raya-Training\\Project-1-ExtractCourseInformation\\.local\\",
   "expectedPackageFiles": [
@@ -260,7 +260,8 @@
     "C:\\Users\\DELL\\.nuget\\packages\\uipath.uiautomation.activities.runtime.design\\26.10.0\\uipath.uiautomation.activities.runtime.design.26.10.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\uipath.uiautomation.cli\\26.10.0\\uipath.uiautomation.cli.26.10.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\uipath.uiautomation.design.recoverypanel\\26.10.0\\uipath.uiautomation.design.recoverypanel.26.10.0.nupkg.sha512",
-    "C:\\Users\\DELL\\.nuget\\packages\\uipath.vision\\3.16.0\\uipath.vision.3.16.0.nupkg.sha512"
+    "C:\\Users\\DELL\\.nuget\\packages\\uipath.vision\\3.16.0\\uipath.vision.3.16.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\uipath.workflowevents.activities\\3.39.0\\uipath.workflowevents.activities.3.39.0.nupkg.sha512"
   ],
   "logs": []
 }

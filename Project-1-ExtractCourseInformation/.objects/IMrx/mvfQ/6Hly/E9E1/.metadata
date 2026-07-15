@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Created byJulian Melans…",
+  "Type": "Element",
+  "Id": "E9E1dZTqiEmmfq2N6LZJBQ",
+  "Reference": "QKVIHkXsPEqgGUEety4wYA/E9E1dZTqiEmmfq2N6LZJBQ",
+  "ParentRef": "QKVIHkXsPEqgGUEety4wYA/6HlyY7MGrUeDKJnDm1H0gQ",
+  "Created": "2026-07-15T13:41:34.0180823Z",
+  "Updated": "2026-07-15T13:41:34.0180823Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

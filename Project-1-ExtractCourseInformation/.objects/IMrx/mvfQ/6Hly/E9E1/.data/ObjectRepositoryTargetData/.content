@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="fJFCXHi2SkCMrEYCDsaUlA" Reference="QKVIHkXsPEqgGUEety4wYA/E9E1dZTqiEmmfq2N6LZJBQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="udemy.com/course/complete-ai-guide" DesignTimeRectangle="242, 623, 945, 32" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' tag='SPAN' class='instructor-display-module-scss-module__-KB2AG__instructor-container' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="3991976a-cd46-4f5f-a436-e288bb033bc7" ScopeSelectorArgument="&lt;html app='msedge.exe' url='https://www.udemy.com/course*' idx='2' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="9dab86e94b6abd4a6e8585c9bf061b5a.jpg" xmlns="">0esTQjdz--kSH-5meF0hvfw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

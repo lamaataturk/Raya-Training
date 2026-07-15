@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="7TbNIrC9LEyG6BYWgT0rUw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="iJigtl6wi0CSquBzO-pnzg" Reference="QKVIHkXsPEqgGUEety4wYA/Dm0jJabW10uT7WxS5V0Brg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="udemy.com" DesignTimeRectangle="538, 197, 50, 50" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='ud-btn ud-btn-medium ud-btn-ghost ud-btn-text-sm ud-btn-disabled ud-btn-icon ud-btn-icon-medium' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="d18f8940-98a9-4dfd-b754-a9c3e2b54fcb" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='usi_last_url_1=https://www.udemy.com/=1783622063787;usi_pv_count=31=1783622063787;' title='Udemy: Online Courses for Skills, Careers &amp;amp; AI' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
-      <TargetAnchorable.Anchors>
-        <scg:List x:TypeArguments="ITarget" Capacity="4">
-          <Target DesignTimeRectangle="583, 201, 607, 42" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='search-form-autocomplete--8' tag='INPUT' type='text' class='ud-text-input ud-text-input-small ud-text-sm ud-search-form-autocomplete-input js-header-search-field' placeholder='Search for anything' aaname='Search for anything' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="6e88d4b9-2341-4959-9209-0ae8642750e3" SearchSteps="FuzzySelector" />
-        </scg:List>
-      </TargetAnchorable.Anchors>
-      <imageRef attrName="InformativeScreenshot" originalValue="5004f7c380d4877a2d1b02adbf67d75a.jpg" xmlns="">0fiuHLDQt60agyC7285-ELg</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="udemy.com" DesignTimeRectangle="543, 189, 50, 50" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='ud-btn ud-btn-medium ud-btn-ghost ud-btn-text-sm ud-btn-disabled ud-btn-icon ud-btn-icon-medium' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="fa1c5889-72aa-4412-a976-d7ac63e36a98" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Udemy:*' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a6f229ef2d1f75e03b5d5df7be7c1915.jpg" xmlns="">0FlyeBkMhUEuxYtlwxfeQdQ</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>

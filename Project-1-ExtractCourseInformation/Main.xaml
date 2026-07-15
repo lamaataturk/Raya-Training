@@ -24,14 +24,14 @@
       <x:String>UiPath.Core</x:String>
       <x:String>UiPath.Core.Activities</x:String>
       <x:String>System.Windows.Markup</x:String>
-      <x:String>GlobalVariablesNamespace</x:String>
-      <x:String>GlobalConstantsNamespace</x:String>
       <x:String>System.Runtime.Serialization</x:String>
       <x:String>System.Reflection</x:String>
       <x:String>System.Linq.Expressions</x:String>
       <x:String>System.ComponentModel</x:String>
       <x:String>System.Xml.Serialization</x:String>
       <x:String>System.Numerics</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -84,16 +84,18 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart sap:VirtualizedContainerService.HintSize="769.6,493.59999999999997" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart sap:VirtualizedContainerService.HintSize="684.8000000000001,651.2" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
-      <Variable x:TypeArguments="x:String" Name="str_CheapestCourse" />
-      <Variable x:TypeArguments="sd:DataTable" Name="dt_Courses" />
+      <Variable x:TypeArguments="x:Int32" Default="3" Name="int_NumberOfCourses" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_CoursesData" />
       <Variable x:TypeArguments="x:String" Name="str_SearchQuery" />
-      <Variable x:TypeArguments="x:Boolean" Name="bool_CoursesFound" />
+      <Variable x:TypeArguments="x:Boolean" Name="bool_CoursesNotExist" />
       <Variable x:TypeArguments="x:Boolean" Name="bool_ContinueSearching" />
-      <Variable x:TypeArguments="x:Int32" Name="int_Idx" />
+      <Variable x:TypeArguments="x:String" Name="str_CheapestCourse" />
     </Flowchart.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -104,9 +106,9 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
-      <x:Reference>__ReferenceID16</x:Reference>
+      <x:Reference>__ReferenceID9</x:Reference>
     </Flowchart.StartNode>
-    <FlowStep x:Name="__ReferenceID16" sap2010:WorkflowViewState.IdRef="FlowStep_1">
+    <FlowStep x:Name="__ReferenceID9" sap2010:WorkflowViewState.IdRef="FlowStep_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">225,125</av:Point>
@@ -125,17 +127,17 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:InvokeWorkflowFile>
       <FlowStep.Next>
-        <FlowStep x:Name="__ReferenceID11" sap2010:WorkflowViewState.IdRef="FlowStep_3">
+        <FlowStep x:Name="__ReferenceID0" sap2010:WorkflowViewState.IdRef="FlowStep_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">225,255</av:Point>
               <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">280.2,325.4 280.2,375</av:PointCollection>
+              <av:PointCollection x:Key="ConnectorLocation">280.2,325.4 280.2,355.4 280,355.4 280,390</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Udemy_SearchCourses - Invoke Workflow File (Chrome-Udemy\\Udemy_SearchCourses.xaml)" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="Chrome-Udemy\\Udemy_SearchCourses.xaml">
             <ui:InvokeWorkflowFile.Arguments>
-              <scg:Dictionary x:TypeArguments="x:String, Argument" />
+              <OutArgument x:TypeArguments="x:String" x:Key="out_strCourseSearchQuery" />
             </ui:InvokeWorkflowFile.Arguments>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -144,243 +146,54 @@
             </sap:WorkflowViewStateService.ViewState>
           </ui:InvokeWorkflowFile>
           <FlowStep.Next>
-            <FlowStep x:Name="__ReferenceID12">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <av:Point x:Key="ShapeLocation">225,375</av:Point>
-                  <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">280.2,445.4 280.2,475.4 280,475.4 280,490</av:PointCollection>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <Assign DisplayName="Assign index" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Assign_3">
-                <Assign.To>
-                  <OutArgument x:TypeArguments="x:Int32">
-                    <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">int_Idx</CSharpReference>
-                  </OutArgument>
-                </Assign.To>
-                <Assign.Value>
-                  <InArgument x:TypeArguments="x:Int32">1</InArgument>
-                </Assign.Value>
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-              </Assign>
-              <FlowStep.Next>
-                <FlowDecision x:Name="__ReferenceID0" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_4">
-                  <FlowDecision.Condition>
-                    <CSharpValue x:TypeArguments="x:Boolean" DisplayName="C sharp value" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">int_Idx&lt;=3</CSharpValue>
-                  </FlowDecision.Condition>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <av:Point x:Key="ShapeLocation">250,490</av:Point>
-                      <av:Size x:Key="ShapeSize">60,60</av:Size>
-                      <av:PointCollection x:Key="TrueConnector">280,550 280,580 280.2,580 280.2,595</av:PointCollection>
-                      <av:PointCollection x:Key="FalseConnector">250,520 220.00000000000003,520 220.00000000000003,520.2 205.4,520.2</av:PointCollection>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <FlowDecision.True>
-                    <FlowStep x:Name="__ReferenceID13">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <av:Point x:Key="ShapeLocation">225,595</av:Point>
-                          <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
-                          <av:PointCollection x:Key="ConnectorLocation">280.2,665.4 280.2,695</av:PointCollection>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Udemy_RetrieveCourseData - Invoke Workflow File (Chrome-Udemy\\Udemy_RetrieveCourseData.xaml)" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_25" UnSafe="False" WorkflowFileName="Chrome-Udemy\\Udemy_RetrieveCourseData.xaml">
-                        <ui:InvokeWorkflowFile.Arguments>
-                          <InOutArgument x:TypeArguments="x:Int32" x:Key="int_Idx">
-                            <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">int_Idx</CSharpReference>
-                          </InOutArgument>
-                        </ui:InvokeWorkflowFile.Arguments>
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                      </ui:InvokeWorkflowFile>
-                      <FlowStep.Next>
-                        <FlowStep x:Name="__ReferenceID14">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <av:Point x:Key="ShapeLocation">225,695</av:Point>
-                              <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
-                              <av:PointCollection x:Key="ConnectorLocation">335.4,730.2 365.4,730.2 365.4,520 310,520</av:PointCollection>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <Assign DisplayName="Assign index" sap:VirtualizedContainerService.HintSize="334.4,142.4" sap2010:WorkflowViewState.IdRef="Assign_4">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:Int32">
-                                <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">int_Idx</CSharpReference>
-                              </OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:Int32">
-                                <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">int_Idx+1</CSharpValue>
-                              </InArgument>
-                            </Assign.Value>
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                          </Assign>
-                          <FlowStep.Next>
-                            <x:Reference>__ReferenceID0</x:Reference>
-                          </FlowStep.Next>
-                        </FlowStep>
-                      </FlowStep.Next>
-                    </FlowStep>
-                  </FlowDecision.True>
-                  <FlowDecision.False>
-                    <FlowStep x:Name="__ReferenceID15">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <av:Point x:Key="ShapeLocation">95,485</av:Point>
-                          <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Udemy_CloseApp - Invoke Workflow File (Chrome-Udemy\\Udemy_CloseApp.xaml)" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_26" UnSafe="False" WorkflowFileName="Chrome-Udemy\\Udemy_CloseApp.xaml">
-                        <ui:InvokeWorkflowFile.Arguments>
-                          <scg:Dictionary x:TypeArguments="x:String, Argument" />
-                        </ui:InvokeWorkflowFile.Arguments>
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                      </ui:InvokeWorkflowFile>
-                    </FlowStep>
-                  </FlowDecision.False>
-                </FlowDecision>
-              </FlowStep.Next>
-            </FlowStep>
-          </FlowStep.Next>
-        </FlowStep>
-      </FlowStep.Next>
-    </FlowStep>
-    <FlowStep>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">1035,255</av:Point>
-          <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="CommentOut_6">
-        <ui:CommentOut.Body>
-          <Sequence DisplayName="Ignored Activities" sap2010:WorkflowViewState.IdRef="Sequence_2">
-            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
-              <ui:InterruptibleDoWhile.Body>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,227.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Control_CheckToContinue - Invoke Workflow File (Control\\Control_CheckToContinue.xaml)" sap:VirtualizedContainerService.HintSize="416,167.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Control\\Control_CheckToContinue.xaml">
-                    <ui:InvokeWorkflowFile.Arguments>
-                      <OutArgument x:TypeArguments="x:Boolean" x:Key="bool_WillUserContinue">
-                        <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">bool_ContinueSearching</CSharpReference>
-                      </OutArgument>
-                    </ui:InvokeWorkflowFile.Arguments>
-                  </ui:InvokeWorkflowFile>
-                </Sequence>
-              </ui:InterruptibleDoWhile.Body>
-              <ui:InterruptibleDoWhile.Condition>
-                <CSharpValue x:TypeArguments="x:Boolean" DisplayName="C sharp value" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">bool_ContinueSearching</CSharpValue>
-              </ui:InterruptibleDoWhile.Condition>
+            <FlowDecision x:Name="__ReferenceID2" DisplayName="No Courses Found?" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_4">
+              <FlowDecision.Condition>
+                <CSharpValue x:TypeArguments="x:Boolean" DisplayName="C sharp value" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">bool_CoursesNotExist</CSharpValue>
+              </FlowDecision.Condition>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <av:Point x:Key="ShapeLocation">250,390</av:Point>
+                  <av:Size x:Key="ShapeSize">60,60</av:Size>
+                  <av:PointCollection x:Key="TrueConnector">250,420 170.2,420 170.2,825</av:PointCollection>
+                  <av:PointCollection x:Key="FalseConnector">310,420 380.2,420 380.2,525</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-            </ui:InterruptibleDoWhile>
-          </Sequence>
-        </ui:CommentOut.Body>
-      </ui:CommentOut>
-    </FlowStep>
-    <FlowStep sap2010:WorkflowViewState.IdRef="FlowStep_2">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">865,265</av:Point>
-          <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">920.2,335.4 890,335.4 890,360</av:PointCollection>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <Assign DisplayName="Continue Search = True" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Assign_2">
-        <Assign.To>
-          <OutArgument x:TypeArguments="x:Boolean">
-            <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">bool_ContinueSearching</CSharpReference>
-          </OutArgument>
-        </Assign.To>
-        <Assign.Value>
-          <InArgument x:TypeArguments="x:Boolean">
-            <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">true</CSharpValue>
-          </InArgument>
-        </Assign.Value>
-      </Assign>
-      <FlowStep.Next>
-        <FlowDecision x:Name="__ReferenceID1" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
-          <FlowDecision.Condition>
-            <CSharpValue x:TypeArguments="x:Boolean" DisplayName="C sharp value" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">bool_ContinueSearching == false</CSharpValue>
-          </FlowDecision.Condition>
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              <av:Point x:Key="ShapeLocation">860,360</av:Point>
-              <av:Size x:Key="ShapeSize">60,60</av:Size>
-              <av:PointCollection x:Key="TrueConnector">890,420 890,450.00000000000006 890.2,450.00000000000006 890.2,475</av:PointCollection>
-              <av:PointCollection x:Key="FalseConnector">920,390 950,390 950,450.00000000000006 625,450.00000000000006 625,380.2 655,380.2</av:PointCollection>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <FlowDecision.True>
-            <FlowStep x:Name="__ReferenceID2">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <av:Point x:Key="ShapeLocation">835,475</av:Point>
-                  <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">890.2,545.4 890.2,575.4 890,575.4 890,590</av:PointCollection>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Udemy_SearchCourses - Invoke Workflow File (Chrome-Udemy\\Udemy_SearchCourses.xaml)" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_17" UnSafe="False" WorkflowFileName="Chrome-Udemy\\Udemy_SearchCourses.xaml">
-                <ui:InvokeWorkflowFile.Arguments>
-                  <scg:Dictionary x:TypeArguments="x:String, Argument" />
-                </ui:InvokeWorkflowFile.Arguments>
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-              </ui:InvokeWorkflowFile>
-              <FlowStep.Next>
-                <FlowDecision x:Name="__ReferenceID4" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
-                  <FlowDecision.Condition>
-                    <CSharpValue x:TypeArguments="x:Boolean" DisplayName="C sharp value" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">bool_CoursesFound == true</CSharpValue>
-                  </FlowDecision.Condition>
+              <FlowDecision.True>
+                <FlowStep x:Name="__ReferenceID6">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <av:Point x:Key="ShapeLocation">860,590</av:Point>
-                      <av:Size x:Key="ShapeSize">60,60</av:Size>
-                      <av:PointCollection x:Key="TrueConnector">890,650 890,680 890.2,680 890.2,695</av:PointCollection>
-                      <av:PointCollection x:Key="FalseConnector">920,620 950,620 950,620.2 965,620.2</av:PointCollection>
+                      <av:Point x:Key="ShapeLocation">115,825</av:Point>
+                      <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                      <av:PointCollection x:Key="ConnectorLocation">225.4,860.2 325,860.2</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <FlowDecision.True>
-                    <FlowStep x:Name="__ReferenceID5">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">"No Courses Found"</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LogMessage>
+                  <FlowStep.Next>
+                    <FlowStep x:Name="__ReferenceID1">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <av:Point x:Key="ShapeLocation">835,695</av:Point>
+                          <av:Point x:Key="ShapeLocation">325,825</av:Point>
                           <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
-                          <av:PointCollection x:Key="ConnectorLocation">890.2,765.4 890.2,815</av:PointCollection>
+                          <av:PointCollection x:Key="ConnectorLocation">380.2,895.4 380.2,925.4 380,925.4 380,950</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Udemy_RetrieveCourseData - Invoke Workflow File (Chrome-Udemy\\Udemy_RetrieveCourseData.xaml)" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_18" UnSafe="False" WorkflowFileName="Chrome-Udemy\\Udemy_RetrieveCourseData.xaml">
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Control_CheckToContinue - Invoke Workflow File (Control\\Control_CheckToContinue.xaml)" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_29" UnSafe="False" WorkflowFileName="Control\\Control_CheckToContinue.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
-                          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                          <OutArgument x:TypeArguments="x:Boolean" x:Key="out_boolContinueSearch">
+                            <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">bool_ContinueSearching</CSharpReference>
+                          </OutArgument>
                         </ui:InvokeWorkflowFile.Arguments>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -389,34 +202,31 @@
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:InvokeWorkflowFile>
                       <FlowStep.Next>
-                        <FlowStep x:Name="__ReferenceID7">
+                        <FlowDecision x:Name="__ReferenceID7" DisplayName="Another Search?" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_5">
+                          <FlowDecision.Condition>
+                            <CSharpValue x:TypeArguments="x:Boolean" DisplayName="C sharp value" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">bool_ContinueSearching</CSharpValue>
+                          </FlowDecision.Condition>
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <av:Point x:Key="ShapeLocation">835,815</av:Point>
-                              <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
-                              <av:PointCollection x:Key="ConnectorLocation">890.2,885.4 890.2,935</av:PointCollection>
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <av:Point x:Key="ShapeLocation">350,950</av:Point>
+                              <av:Size x:Key="ShapeSize">60,60</av:Size>
+                              <av:PointCollection x:Key="TrueConnector">410,980 541.1168525713462,980 541.1168525713462,290.2 335.4,290.2</av:PointCollection>
+                              <av:PointCollection x:Key="FalseConnector">380,1010 380,1022.8219102123899 380.2,1022.8219102123899 380.2,1085</av:PointCollection>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Udemy_ShowLeastPriceCourses - Invoke Workflow File (Chrome-Udemy\\Udemy_ShowLeastPriceCourses.xaml)" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_19" UnSafe="False" WorkflowFileName="Chrome-Udemy\\Udemy_ShowLeastPriceCourses.xaml">
-                            <ui:InvokeWorkflowFile.Arguments>
-                              <scg:Dictionary x:TypeArguments="x:String, Argument" />
-                            </ui:InvokeWorkflowFile.Arguments>
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                          </ui:InvokeWorkflowFile>
-                          <FlowStep.Next>
-                            <FlowStep x:Name="__ReferenceID8">
+                          <FlowDecision.True>
+                            <x:Reference>__ReferenceID0</x:Reference>
+                          </FlowDecision.True>
+                          <FlowDecision.False>
+                            <FlowStep x:Name="__ReferenceID4">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <av:Point x:Key="ShapeLocation">835,935</av:Point>
+                                  <av:Point x:Key="ShapeLocation">325,1085</av:Point>
                                   <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
-                                  <av:PointCollection x:Key="ConnectorLocation">890.2,1005.4 890.2,1055</av:PointCollection>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="NotePad_SaveCoursesData - Invoke Workflow File (NotePad\\NotePad_SaveCoursesData.xaml)" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_20" UnSafe="False" WorkflowFileName="NotePad\\NotePad_SaveCoursesData.xaml">
+                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Udemy_CloseApp - Invoke Workflow File (Chrome-Udemy\\Udemy_CloseApp.xaml)" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_26" UnSafe="False" WorkflowFileName="Chrome-Udemy\\Udemy_CloseApp.xaml">
                                 <ui:InvokeWorkflowFile.Arguments>
                                   <scg:Dictionary x:TypeArguments="x:String, Argument" />
                                 </ui:InvokeWorkflowFile.Arguments>
@@ -426,117 +236,105 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:InvokeWorkflowFile>
-                              <FlowStep.Next>
-                                <FlowStep x:Name="__ReferenceID9">
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <av:Point x:Key="ShapeLocation">835,1055</av:Point>
-                                      <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
-                                      <av:PointCollection x:Key="ConnectorLocation">890.2,1125.4 890.2,1175</av:PointCollection>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Control_CheckToContinue - Invoke Workflow File (Control\\Control_CheckToContinue.xaml)" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_21" UnSafe="False" WorkflowFileName="Control\\Control_CheckToContinue.xaml">
-                                    <ui:InvokeWorkflowFile.Arguments>
-                                      <scg:Dictionary x:TypeArguments="x:String, Argument" />
-                                    </ui:InvokeWorkflowFile.Arguments>
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                  </ui:InvokeWorkflowFile>
-                                  <FlowStep.Next>
-                                    <FlowStep x:Name="__ReferenceID10">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <av:Point x:Key="ShapeLocation">835,1175</av:Point>
-                                          <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Udemy_CloseApp - Invoke Workflow File (Chrome-Udemy\\Udemy_CloseApp.xaml)" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_22" UnSafe="False" WorkflowFileName="Chrome-Udemy\\Udemy_CloseApp.xaml">
-                                        <ui:InvokeWorkflowFile.Arguments>
-                                          <scg:Dictionary x:TypeArguments="x:String, Argument" />
-                                        </ui:InvokeWorkflowFile.Arguments>
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                      </ui:InvokeWorkflowFile>
-                                    </FlowStep>
-                                  </FlowStep.Next>
-                                </FlowStep>
-                              </FlowStep.Next>
                             </FlowStep>
-                          </FlowStep.Next>
-                        </FlowStep>
+                          </FlowDecision.False>
+                        </FlowDecision>
                       </FlowStep.Next>
                     </FlowStep>
-                  </FlowDecision.True>
-                  <FlowDecision.False>
-                    <FlowStep x:Name="__ReferenceID6">
+                  </FlowStep.Next>
+                </FlowStep>
+              </FlowDecision.True>
+              <FlowDecision.False>
+                <FlowStep x:Name="__ReferenceID3" sap2010:WorkflowViewState.IdRef="FlowStep_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <av:Point x:Key="ShapeLocation">325,525</av:Point>
+                      <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                      <av:PointCollection x:Key="ConnectorLocation">380.2,595.4 380.2,625</av:PointCollection>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Udemy_RetrieveCourseData - Invoke Workflow File (Chrome-Udemy\\Udemy_RetrieveCourseData.xaml)" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_25" UnSafe="False" WorkflowFileName="Chrome-Udemy\\Udemy_RetrieveCourseData.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InArgument x:TypeArguments="x:Int32" x:Key="in_intNumberOfCourses">
+                        <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">int_NumberOfCourses</CSharpValue>
+                      </InArgument>
+                      <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dtCoursesData">
+                        <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">dt_CoursesData</CSharpReference>
+                      </OutArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:InvokeWorkflowFile>
+                  <FlowStep.Next>
+                    <FlowStep x:Name="__ReferenceID5">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <av:Point x:Key="ShapeLocation">965,585</av:Point>
+                          <av:Point x:Key="ShapeLocation">325,625</av:Point>
                           <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                          <av:PointCollection x:Key="ConnectorLocation">380.2,695.4 380.2,725</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="MessageBox_2">
-                        <ui:MessageBox.Text>
-                          <InArgument x:TypeArguments="x:Object">
-                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">"No courses found. Please try another search."</CSharpValue>
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Udemy_ShowLeastPriceCourses - Invoke Workflow File (Chrome-Udemy\\Udemy_ShowLeastPriceCourses.xaml)" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_28" UnSafe="False" WorkflowFileName="Chrome-Udemy\\Udemy_ShowLeastPriceCourses.xaml">
+                        <ui:InvokeWorkflowFile.Arguments>
+                          <OutArgument x:TypeArguments="x:String" x:Key="out_CheapestCourse">
+                            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">str_CheapestCourse</CSharpReference>
+                          </OutArgument>
+                          <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dtCoursesData">
+                            <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">dt_CoursesData</CSharpValue>
                           </InArgument>
-                        </ui:MessageBox.Text>
+                        </ui:InvokeWorkflowFile.Arguments>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                      </ui:MessageBox>
+                      </ui:InvokeWorkflowFile>
+                      <FlowStep.Next>
+                        <FlowStep x:Name="__ReferenceID8">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <av:Point x:Key="ShapeLocation">325,725</av:Point>
+                              <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                              <av:PointCollection x:Key="ConnectorLocation">380.2,795.4 380.2,825</av:PointCollection>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="NotePad_SaveCoursesData - Invoke Workflow File (NotePad\\NotePad_SaveCoursesData.xaml)" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_30" UnSafe="False" WorkflowFileName="NotePad\\NotePad_SaveCoursesData.xaml">
+                            <ui:InvokeWorkflowFile.Arguments>
+                              <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dtCoursesData">
+                                <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">dt_CoursesData</CSharpValue>
+                              </InArgument>
+                            </ui:InvokeWorkflowFile.Arguments>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:InvokeWorkflowFile>
+                          <FlowStep.Next>
+                            <x:Reference>__ReferenceID1</x:Reference>
+                          </FlowStep.Next>
+                        </FlowStep>
+                      </FlowStep.Next>
                     </FlowStep>
-                  </FlowDecision.False>
-                </FlowDecision>
-              </FlowStep.Next>
-            </FlowStep>
-          </FlowDecision.True>
-          <FlowDecision.False>
-            <FlowStep x:Name="__ReferenceID3">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <av:Point x:Key="ShapeLocation">655,345</av:Point>
-                  <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Udemy_CloseApp - Invoke Workflow File (Chrome-Udemy\\Udemy_CloseApp.xaml)" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_23" UnSafe="False" WorkflowFileName="Chrome-Udemy\\Udemy_CloseApp.xaml">
-                <ui:InvokeWorkflowFile.Arguments>
-                  <scg:Dictionary x:TypeArguments="x:String, Argument" />
-                </ui:InvokeWorkflowFile.Arguments>
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-              </ui:InvokeWorkflowFile>
-            </FlowStep>
-          </FlowDecision.False>
-        </FlowDecision>
+                  </FlowStep.Next>
+                </FlowStep>
+              </FlowDecision.False>
+            </FlowDecision>
+          </FlowStep.Next>
+        </FlowStep>
       </FlowStep.Next>
     </FlowStep>
-    <x:Reference>__ReferenceID1</x:Reference>
+    <x:Reference>__ReferenceID0</x:Reference>
     <x:Reference>__ReferenceID2</x:Reference>
     <x:Reference>__ReferenceID3</x:Reference>
     <x:Reference>__ReferenceID4</x:Reference>
     <x:Reference>__ReferenceID5</x:Reference>
     <x:Reference>__ReferenceID6</x:Reference>
+    <x:Reference>__ReferenceID1</x:Reference>
     <x:Reference>__ReferenceID7</x:Reference>
     <x:Reference>__ReferenceID8</x:Reference>
-    <x:Reference>__ReferenceID9</x:Reference>
-    <x:Reference>__ReferenceID10</x:Reference>
-    <x:Reference>__ReferenceID11</x:Reference>
-    <x:Reference>__ReferenceID12</x:Reference>
-    <x:Reference>__ReferenceID0</x:Reference>
-    <x:Reference>__ReferenceID13</x:Reference>
-    <x:Reference>__ReferenceID14</x:Reference>
-    <x:Reference>__ReferenceID15</x:Reference>
   </Flowchart>
 </Activity>

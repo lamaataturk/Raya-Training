@@ -1,0 +1,13 @@
+﻿{
+  "Name": "edge Search results  Udemy",
+  "Type": "Screen",
+  "Id": "hKw84VTPMk6uP4eFQHm9YQ",
+  "Reference": "QKVIHkXsPEqgGUEety4wYA/hKw84VTPMk6uP4eFQHm9YQ",
+  "ParentRef": "QKVIHkXsPEqgGUEety4wYA/mvfQ0xqRIEaNiYJAMgrKeA",
+  "Created": "2026-07-15T19:25:31.3805725Z",
+  "Updated": "2026-07-15T19:25:31.3805725Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
