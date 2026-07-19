@@ -1,0 +1,23 @@
+{
+  "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
+  "entryPoints": [
+    {
+      "filePath": "GetRegistrationEmails.xaml",
+      "uniqueId": "9814ba95-3bec-4e78-b3a2-84d47b106582",
+      "type": "process",
+      "output": {
+        "type": "object",
+        "properties": {
+          "out_AttachmentPath": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "8a766b02-2ec2-45b6-90f2-97e15cbcfee3",
+      "type": "process"
+    }
+  ]
+}

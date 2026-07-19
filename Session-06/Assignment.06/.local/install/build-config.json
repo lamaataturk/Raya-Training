@@ -1,0 +1,9 @@
+{
+  "Version": "1.0",
+  "IncludeWorkflows": [
+    "Main.xaml",
+    "ProcessEmployeeFile.xaml",
+    "SendSummaryEmail.xaml",
+    "GetRegistrationEmails.xaml"
+  ]
+}
