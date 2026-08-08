@@ -1,0 +1,6 @@
+{
+  "Name": "RAYA_UiPath_VerifyAccountPositions_Performer",
+  "ProjectType": "Process",
+  "Description": "Robotic Enterprise Framework",
+  "MainFile": "Main.xaml"
+}

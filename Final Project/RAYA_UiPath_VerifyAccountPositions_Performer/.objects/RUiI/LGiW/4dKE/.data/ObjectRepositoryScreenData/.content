@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="JWt7GSjXWkitXpxKT4aB6g" Reference="80WURrXF-UO_FDDSxx5f6w/4dKEVyTB3UOPrEPuL31pGg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="586, 303, 748, 438" ContentHash="WummtAl1QkK7pg3wxBNzLg" FilePath="C:\Users\DELL\Documents\GitHub\Raya-Training\Final Project\ACME-System3-v0.1\acme-system3.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFtSURBVFhH7dXNSsNAFIbhKCKKiCKit+q/FetCcC0EXAribYh4CyZxnwvIf7I5ckrGpEMmMzkH0yhz4MVSann4sqhjz569/3J39w8wpWpWc10f+q3e3j8W9b2uWc2Jfx6j55fXRX2va1Zz+GYYhpNICayqavTKslyqKAragvhlzsknORmGdeG0wEf36eevqA08nn/B0TyAw9sADm4C2J8FsDfzYffah50rH7YvPdi68GDz3IONMw/WTxug67ra2AsOxa21gCLVckYLqhJACm7Ignme8x4xBSeAuuUQpwWqEkAKDkNQ12JybCAFh5ksh2VZxnvEFBxmuqAWqEoAKTjMZDkRC0jBYQjqWkyO/YgpOMxkOSxNU96CFBxmuiAbSMFhJsuJWEAKDkNU12JybCAFh5kshyVJwgNSUy0o41YGNFluMsA+XBzHqwXqcCwg1v7RH/LzZYpjAcfAkYFj4aIoUgOnVM2yZ8/eHz/H+QYcnCQCIP+zCQAAAABJRU5ErkJggg==" Reference="80WURrXF-UO_FDDSxx5f6w/4dKEVyTB3UOPrEPuL31pGg" Selector="&lt;wnd app='acme-system3.exe' ctrlname='Login' /&gt;" Version="V3">
+      <TargetApp.Arguments>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.Arguments>
+      <imageRef attrName="InformativeScreenshot" originalValue="d7fbccae4f2c04ed36efe556f7c98d6f.jpg" xmlns="">0DWej6rzylE2WpGB4oJR64g</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

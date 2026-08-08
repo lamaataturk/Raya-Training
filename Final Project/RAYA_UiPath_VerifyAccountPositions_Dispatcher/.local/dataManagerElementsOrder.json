@@ -1,0 +1,12 @@
+{
+  "Workflows": [
+    {
+      "Path": "Email_SendExceptionMail.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": null,
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    }
+  ]
+}
