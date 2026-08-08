@@ -1,6 +1,10 @@
 {
   "Version": "1.0",
   "IncludeWorkflows": [
-    "ACMEWeb_ExtractWorkItems.xaml"
+    "Framework/Process.xaml",
+    "ACMEWeb_Login.xaml",
+    "ACMEWeb_NavigateWorkItems.xaml",
+    "ACMEWeb_ExtractWorkItems.xaml",
+    "Dispatcher_DispatchWorkItems.xaml"
   ]
 }

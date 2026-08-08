@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="WR7_s7e9wkSCfdjuLOfDug" Reference="pXTMPAkExEGGyAYV8fBUWA/G35XAWCYKEmLe1dJUVDpkw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="6SL9Bxjycky39IK1FHFhww" Reference="pXTMPAkExEGGyAYV8fBUWA/G35XAWCYKEmLe1dJUVDpkw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://acme-test.uipath.com/work-items?page=1" ContentHash="_-kzSZRNmUuT6fkuNfQ2Uw" DesignTimeRectangle="322, 262, 1248, 526" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="dedebbee-4039-4fe5-83bf-ce88b5af7c36" Reference="pXTMPAkExEGGyAYV8fBUWA/G35XAWCYKEmLe1dJUVDpkw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="3c1983d4d99f41ef5bdc346393613bca.jpg" xmlns="">0iF6gxncLkku1gW1tCfyE5w</imageRef>
-    </TargetAnchorable>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://acme-test.uipath.com/work-items?page=1" DesignTimeRectangle="322, 262, 1248, 526" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="dedebbee-4039-4fe5-83bf-ce88b5af7c36" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
     <x:String x:Key="ActivityType">ExtractDataGeneric</x:String>
     <p:InArgument x:TypeArguments="x:String" x:Key="ExtractDataSettings" xml:space="preserve">&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;
 	&lt;Column xsi:type='DataColumn' ReferenceName='Actions' ReferenceIdx='0' Name='Actions'&gt;
