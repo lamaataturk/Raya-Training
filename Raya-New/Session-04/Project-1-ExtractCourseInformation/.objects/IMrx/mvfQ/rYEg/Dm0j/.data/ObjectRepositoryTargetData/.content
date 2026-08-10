@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="iJigtl6wi0CSquBzO-pnzg" Reference="QKVIHkXsPEqgGUEety4wYA/Dm0jJabW10uT7WxS5V0Brg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="udemy.com" DesignTimeRectangle="543, 189, 50, 50" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='ud-btn ud-btn-medium ud-btn-ghost ud-btn-text-sm ud-btn-disabled ud-btn-icon ud-btn-icon-medium' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="fa1c5889-72aa-4412-a976-d7ac63e36a98" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Udemy:*' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a6f229ef2d1f75e03b5d5df7be7c1915.jpg" xmlns="">0FlyeBkMhUEuxYtlwxfeQdQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Cairo",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "7T-ZFqZJEUWhesxYy0OmxA",
+  "Reference": "df64UZAu2kuzMRmJDFPW3Q/7T-ZFqZJEUWhesxYy0OmxA",
+  "ParentRef": "df64UZAu2kuzMRmJDFPW3Q/XSAAvj8nvE2Q33UFZ2d0jw",
+  "Created": "2026-07-09T08:20:42.9507562Z",
+  "Updated": "2026-07-09T08:20:42.9507562Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

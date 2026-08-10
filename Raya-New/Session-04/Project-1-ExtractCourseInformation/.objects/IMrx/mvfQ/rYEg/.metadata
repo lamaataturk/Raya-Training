@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Udemy Online Courses for Skills, Caree",
+  "Type": "Screen",
+  "Id": "rYEgnuMvkUm1r-DAjZhKFQ",
+  "Reference": "QKVIHkXsPEqgGUEety4wYA/rYEgnuMvkUm1r-DAjZhKFQ",
+  "ParentRef": "QKVIHkXsPEqgGUEety4wYA/mvfQ0xqRIEaNiYJAMgrKeA",
+  "Created": "2026-07-09T09:51:50.9284817Z",
+  "Updated": "2026-07-09T09:51:50.9284817Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,1 @@
+{"model":{"path":"Control/Control_CheckToContinue.xaml","arguments":[{"name":"out_ContinueSearch","type":"System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e","direction":"Out"}],"outline":{"displayName":"Control_CheckToContinue","nodeName":"Sequence"}},"lastModified":"2026-07-09T11:05:47.7466373Z"}

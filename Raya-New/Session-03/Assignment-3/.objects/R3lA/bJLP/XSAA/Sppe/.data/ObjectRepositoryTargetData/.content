@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FNmpFJ6dckmeJcvEbtjKIA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="accuweather.com" DesignTimeRectangle="629, 317, 30, 30" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='search-icon' tag='svg' /&gt;" Guid="e331008e-bc00-47c5-a302-e06ddcc819fa" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Local, National, &amp;amp; Global Daily Weather Forecast | AccuWeather' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="ba7b643e0ebf9a7b9bf4e50670fa1a2c.jpg" xmlns="">0b4zq00aiO061ONgJ4EpiHA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

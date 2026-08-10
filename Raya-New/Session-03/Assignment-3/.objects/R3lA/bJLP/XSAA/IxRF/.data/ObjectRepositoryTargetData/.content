@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="SO7hWJcNrkO3FxzR8nTTAA" Reference="df64UZAu2kuzMRmJDFPW3Q/IxRFZK-CjUuVGajwO1HTUg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="accuweather.com" DesignTimeRectangle="675, 320, 427, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" Guid="9fa1c877-c397-49cf-830d-c225addccdaa" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Local, National, &amp;amp; Global Daily Weather Forecast | AccuWeather' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="87088a9aaab8a5be223a3999beafab59.jpg" xmlns="">0nQ2YOidtW0mUu0CcU7ZfFg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

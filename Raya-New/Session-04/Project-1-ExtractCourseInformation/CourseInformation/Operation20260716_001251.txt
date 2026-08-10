@@ -1,0 +1,4 @@
+CourseNumber,CourseTitle,CourseAuthor,CourseRate,CoursePrice
+1,"The Complete AI Guide: Learn ChatGPT, Claude & Generative AI","Created byJulian Melanson, Benza Maman, Leap Year Learning",4.5,329.99
+2,The AI Engineer Course 2026: Complete AI Engineer Bootcamp,Created by365 Careers,4.6,309.99
+3,"AI Engineer Core Track: LLM Engineering, RAG, QLoRA, Agents","Created byLigency ​, Ed Donner",4.7,329.99

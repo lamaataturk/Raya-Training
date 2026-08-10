@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Welcome, lamaataturk@gm…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "2CEaPth9XEeG0tkILp9dnQ",
+  "Reference": "pXTMPAkExEGGyAYV8fBUWA/2CEaPth9XEeG0tkILp9dnQ",
+  "ParentRef": "pXTMPAkExEGGyAYV8fBUWA/S6CfqyeoQEOfP32KRIPMWg",
+  "Created": "2026-08-10T12:29:59.8249788Z",
+  "Updated": "2026-08-10T12:29:59.8249788Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

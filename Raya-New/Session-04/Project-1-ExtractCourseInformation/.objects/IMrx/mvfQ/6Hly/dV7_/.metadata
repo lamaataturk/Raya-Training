@@ -1,0 +1,14 @@
+﻿{
+  "Name": "4.6Rating 4.6 out of 5…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "dV7_Mds-hUeimahtnIEULg",
+  "Reference": "QKVIHkXsPEqgGUEety4wYA/dV7_Mds-hUeimahtnIEULg",
+  "ParentRef": "QKVIHkXsPEqgGUEety4wYA/6HlyY7MGrUeDKJnDm1H0gQ",
+  "Created": "2026-07-15T13:43:10.5923379Z",
+  "Updated": "2026-07-15T13:43:10.5923379Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

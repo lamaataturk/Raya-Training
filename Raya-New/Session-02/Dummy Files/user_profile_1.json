@@ -1,0 +1,12 @@
+{
+    "userId": "USR0001",
+    "preferences": {
+        "theme": "dark",
+        "notifications": true
+    },
+    "roles": [
+        "user",
+        "editor"
+    ],
+    "lastLogin": "2026-07-03T16:08:59.909128"
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "EGP 267.40",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "wWQN8GWEKE2ia9evo3DXfg",
+  "Reference": "QKVIHkXsPEqgGUEety4wYA/wWQN8GWEKE2ia9evo3DXfg",
+  "ParentRef": "QKVIHkXsPEqgGUEety4wYA/-pb_rF2Zf0mbffl_7dLMBg",
+  "Created": "2026-07-09T11:53:43.7551685Z",
+  "Updated": "2026-07-09T11:53:43.7551685Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

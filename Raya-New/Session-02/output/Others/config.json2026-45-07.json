@@ -1,0 +1,13 @@
+{
+    "appName": "RPA_Processor",
+    "version": "1.0.0",
+    "settings": {
+        "maxRetries": 3,
+        "timeoutMs": 5000,
+        "logLevel": "DEBUG"
+    },
+    "endpoints": {
+        "api": "https://api.example.com/v1",
+        "auth": "https://auth.example.com/login"
+    }
+}

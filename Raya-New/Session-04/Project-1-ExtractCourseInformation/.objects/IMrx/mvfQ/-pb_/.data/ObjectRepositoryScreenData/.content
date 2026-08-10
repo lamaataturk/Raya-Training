@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="zkk-sjW_CUOLbzTK6f5zYQ" Reference="QKVIHkXsPEqgGUEety4wYA/-pb_rF2Zf0mbffl_7dLMBg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-9, -9, 1938, 1060" BrowserType="Chrome" ContentHash="puOvstq9V0-XfcL7uLuoNA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAHRAAAB0QEMkUzzAAAAB3RJTUUH5QkNFC0SvZu6NgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAM2SURBVFhHzZbPaxNBFMdzU0G9CYo3US+iUJof1HooCl49tbH+C54UQTypCAriSfBXtZSaXxp6EGNvQv2BiZZiFRXEg4eGYpPWdjfZbZukyfje7Nvs7uxkN6FE/cKHbmfer+zMzrxAu4pHfu+MBdXhREh5GA8p07GQUoS/VYSep4GRRFA9Pdq/uIPcNq/xcOlgPKyMQnAdYG2ix4LKo0REPUBhOle6L78NAt0CarbAnVKF4m+ODbCtFLY9YeXg/EUI5iLZbyCbE8jFevU9FN5bqeBKD62pLFCTqfM6K+frTF+os+zlVamNQD4ZWT5CaeTCX+6X/Plgic1na0zUwkyNTZ4pS31s5MdC2m5K5xSuExh8EhyapE+o7PuTCmtsUEaJGnXGfk5W2cRJVRqDmMH9RWktwQRuOJkDSx5VWKXUoDSGMNmPiQoHn+1CW/SRxTJYuUppDfFPzWO3p2Cj2YWv+8Ww9br5srxzLgv62GM4CCtlx1LQdy43BswC/DacuTFRngUAsNfuGsnhhIMBz0MGX+fsnTXfoAjaoK33EnA0fmLi8SqZ/FtEA3S2yya7DizDA9z9eIlIDUwSEYW9PKs1SR1zf2Y4ZrdBH9FGQg4LWBQGXZib0NSzUyWXDY7Z1c5+AQpYQEUYdNGtAmAJ1v+LAv75Evhuwi4WwDfhiDDoomsFhJX7AezhpJM2ulVAIqwMBtKHitvhH02ctINdj12ZIXcBmWiZZg21cxRjbn4fYAMpMXBQW7Ou4+wV94WUu7ZKs4xVtYZrXsIIT46iHhBbbJkhp/DRum71Yp1fweZcBp5XF60Cf32oOXwlVOAK2EfpDWH3KjFs8vaSTuEN1auMFWZrnLrQob26oEtj2LhBaS1RS5YTDB1gS+anb4/Xpb42srf3sy2U1insUsBgTnBw8Oaizpa+bjjaMHwuft5gU+c0qY+FOj/et7SX0smFrTMY593OTtLHVf414Po/HfBsQk3m4r3LhymNt9I95V3g8FoIsBmyLdvxVsJ1wu4VnD3PCB/worvecs3bEVaODSQE6qQQDbsd16e2GdGJGcXzG3gPzwUAfyFS4GNB5R4kHmqecL4KBP4A7ey5bU6aYEIAAAAASUVORK5CYII=" Reference="QKVIHkXsPEqgGUEety4wYA/-pb_rF2Zf0mbffl_7dLMBg" Selector="&lt;html app='chrome.exe' htmlwindowname='usi_last_url_1=https://www.udemy.com/courses/search/*' title='Search results | Udemy' /&gt;" Url="https://www.udemy.com/courses/search/?src=ukw&amp;q=ai" Version="V3">
+      <TargetApp.Arguments>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.Arguments>
+      <TargetApp.WorkingDirectory>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.WorkingDirectory>
+      <imageRef attrName="InformativeScreenshot" originalValue="cd4786857d7ad0977280317177d2cf1f.jpg" xmlns="">0i3EH5AhRfE-8--3YTBurWg</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

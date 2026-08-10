@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Master the Fundamentals…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "VqP2V9YTXk-IO3uVoRyg7g",
+  "Reference": "QKVIHkXsPEqgGUEety4wYA/VqP2V9YTXk-IO3uVoRyg7g",
+  "ParentRef": "QKVIHkXsPEqgGUEety4wYA/-pb_rF2Zf0mbffl_7dLMBg",
+  "Created": "2026-07-09T11:45:36.0213476Z",
+  "Updated": "2026-07-09T11:45:36.0213476Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="6SL9Bxjycky39IK1FHFhww" Reference="pXTMPAkExEGGyAYV8fBUWA/G35XAWCYKEmLe1dJUVDpkw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="bROSfuCc4Uqk3F7fu29vSw" Reference="pXTMPAkExEGGyAYV8fBUWA/G35XAWCYKEmLe1dJUVDpkw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://acme-test.uipath.com/work-items?page=1" DesignTimeRectangle="322, 262, 1248, 526" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="dedebbee-4039-4fe5-83bf-ce88b5af7c36" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://acme-test.uipath.com/work-items?page=6" ContentHash="WU3rnlzTj0OdgV2ISTkzmg" DesignTimeRectangle="336, 380, 1248, 526" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="7937f1c4-85eb-4a86-9905-6235540478ae" Reference="pXTMPAkExEGGyAYV8fBUWA/G35XAWCYKEmLe1dJUVDpkw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
     <x:String x:Key="ActivityType">ExtractDataGeneric</x:String>
     <p:InArgument x:TypeArguments="x:String" x:Key="ExtractDataSettings" xml:space="preserve">&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;
 	&lt;Column xsi:type='DataColumn' ReferenceName='Actions' ReferenceIdx='0' Name='Actions'&gt;
@@ -53,12 +53,7 @@
 		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
 		&lt;Format xsi:type='TextColumnFormat' /&gt;
 	&lt;/Column&gt;
-	&lt;Column xsi:type='DataNextLink' /&gt;
 &lt;/Table&gt;</p:InArgument>
-    <TargetAnchorable x:Key="NextLinkTarget" BrowserURL="acme-test.uipath.com/work-items" DesignTimeRectangle="1550, 916, 27, 28" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-label='Next »' tag='A' /&gt;" Guid="8d9894fc-8c53-41b3-b1ee-d699e04b0f08" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
-      <TargetAnchorable.PointOffset>
-        <PointOffset X="0" Y="0" />
-      </TargetAnchorable.PointOffset>
-    </TargetAnchorable>
+    <x:Null x:Key="NextLinkTarget" />
   </ObjectRepositoryTargetData.Data>
 </ObjectRepositoryTargetData>

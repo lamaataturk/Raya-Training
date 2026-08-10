@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="X3jn7VAPuUmuoqXlaZeASA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="accuweather.com/en/eg/cairo/127164/weather-forecast/127164" DesignTimeRectangle="359, 318, 790, 125" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='body' tag='DIV' /&gt;" Guid="1d27e697-4df9-421f-af1a-81da5ba9406d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Cairo, Cairo, Egypt Weather Forecast | AccuWeather' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="63cff0659d8ff2ce72fda93eeb188afe.jpg" xmlns="">0V64ppn12lUq7ElsogiK4jw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

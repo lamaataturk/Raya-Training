@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="q-gG_Cs4gkKoKtoLmM_wfA" Reference="QKVIHkXsPEqgGUEety4wYA/lrtPCDgci0KWSW0ljIwAzw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="udemy.com/courses/search" DesignTimeRectangle="152, 319, 1080, 33" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H1' type='' class='ud-heading-xl' aaname='Sorry, we couldn&amp;apos;t find any results for ' /&gt;" Guid="207ce652-2f19-4286-b8f6-23b5d0a8c08c" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Search results | Udemy' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="036d53d09096d37278325fed0f295492.jpg" xmlns="">0Tzyl5bxhx02j0QJF0vlr0A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

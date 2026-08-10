@@ -1,6 +1,6 @@
 {
   "Version": "1.0",
   "IncludeWorkflows": [
-    "Email_SendExceptionMail.xaml"
+    "ACMEWeb_ExtractWorkItems.xaml"
   ]
 }

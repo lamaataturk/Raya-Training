@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Jj8VirfvKUSiBhBEcF2csg" Reference="QKVIHkXsPEqgGUEety4wYA/dV7_Mds-hUeimahtnIEULg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="udemy.com/course/complete-ai-guide" DesignTimeRectangle="829, 742, 41, 33" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='ud-heading-xl' tag='SPAN' type='' /&gt;" Guid="bd833849-c750-4a05-9042-9eed379e2956" ScopeSelectorArgument="&lt;html app='msedge.exe' url='https://www.udemy.com/course*' idx='2' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="796, 805, 107, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='* ratings' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' class='ud-btn-label' matching:class='fuzzy' fuzzylevel:class='0.0' tag='SPAN' type='' /&gt;" Guid="1290cfda-1efd-4b6b-ab1f-c661f2eec1f0" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4e199c79b9be64d8badb7f535e348dec.jpg" xmlns="">0CKbzHzNEDUqYd_eRZYnq4w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
