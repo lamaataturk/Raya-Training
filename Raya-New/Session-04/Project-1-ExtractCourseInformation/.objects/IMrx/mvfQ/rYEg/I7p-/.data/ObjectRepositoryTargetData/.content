@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="6IY9X2rQZ0mdz9K4FJRXow" Reference="QKVIHkXsPEqgGUEety4wYA/I7p-gYOvj0yyoWbramz0dw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="udemy.com" DesignTimeRectangle="588, 193, 597, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='search-form-autocomplete--1529' matching:id='fuzzy' fuzzylevel:id='0.0' tag='INPUT' type='text' class='ud-text-input ud-text-input-small ud-text-sm ud-search-form-autocomplete-input js-header-search-field' matching:class='fuzzy' fuzzylevel:class='0.0' placeholder='Search for anything' aaname='Search for anything' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="54a33fe9-dad3-4699-ac7f-9559266bc37f" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Udemy:*' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="fce1c8499285b9b66e170b7633436871.jpg" xmlns="">0KOS1SrrMoUSGSfM4OdAfVg</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">TypeInto</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>
