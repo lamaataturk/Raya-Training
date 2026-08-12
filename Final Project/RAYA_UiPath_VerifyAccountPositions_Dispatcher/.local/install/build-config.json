@@ -1,6 +1,19 @@
 {
   "Version": "1.0",
   "IncludeWorkflows": [
-    "ACMEWeb_ExtractWorkItems.xaml"
+    "Main.xaml",
+    "Framework/InitAllSettings.xaml",
+    "Framework/KillAllProcesses.xaml",
+    "Framework/InitAllApplications.xaml",
+    "Framework/Process.xaml",
+    "Framework/SetTransactionStatus.xaml",
+    "Framework/CloseAllApplications.xaml",
+    "ACMEWeb_Login.xaml",
+    "ACMEWeb_NavigateWorkItems.xaml",
+    "ACMEWeb_ExtractWorkItems.xaml",
+    "Dispatcher_DispatchWorkItems.xaml",
+    "Framework/TakeScreenshot.xaml",
+    "Framework/RetryCurrentTransaction.xaml",
+    "Email_SendExceptionMail.xaml"
   ]
 }

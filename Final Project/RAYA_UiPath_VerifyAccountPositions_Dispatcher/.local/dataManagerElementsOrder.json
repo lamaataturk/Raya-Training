@@ -48,17 +48,8 @@
     {
       "Path": "Dispatcher_DispatchWorkItems.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "ACMEWeb_GetWI5ClientDetails.xaml",
-      "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "currentWIID&Sequence_1",
-        "clientCountry&Sequence_2"
+        "exceptionScreenshot&Sequence_6"
       ],
       "ArgumentsSectionElementsOrder": null,
       "ConstantsSectionElementsOrder": null,
@@ -74,6 +65,30 @@
     },
     {
       "Path": "ACMEWeb_NavigateWorkItems.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": null,
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/TakeScreenshot.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": null,
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllSettings.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": null,
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/SetTransactionStatus.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": null,
       "ArgumentsSectionElementsOrder": null,
