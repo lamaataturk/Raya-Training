@@ -46,6 +46,7 @@
       <x:String>System.Security</x:String>
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
       <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -108,7 +109,7 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ACMEWeb_GetSecurityHash" sap:VirtualizedContainerService.HintSize="720.4000000000001,884" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ACMEWeb_GetSecurityHash" sap:VirtualizedContainerService.HintSize="720.4000000000001,1220" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="sha1Url" />
       <Variable x:TypeArguments="x:String" Name="hashInput">
@@ -129,13 +130,13 @@
         </OutArgument>
       </ui:GetRobotAsset.Value>
     </ui:GetRobotAsset>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge SHA1 online" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,685.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="6e6d03bc-a8bf-4d83-8e29-b014b972a8cb" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge SHA1 online" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,1021.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="6e6d03bc-a8bf-4d83-8e29-b014b972a8cb" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,491.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,827.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -161,7 +162,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NSelectItem DisplayName="Select Item 'sha-1'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185.6" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="sha-1" ScopeIdentifier="6e6d03bc-a8bf-4d83-8e29-b014b972a8cb" Version="V5">
+            <uix:NSelectItem DisplayName="Select Item 'sha-1'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194.4" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="sha-1" ScopeIdentifier="6e6d03bc-a8bf-4d83-8e29-b014b972a8cb" Version="V5">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="38">
                   <x:String>sha-1</x:String>
@@ -208,6 +209,21 @@
                 <uix:TargetAnchorable BrowserURL="sha1-online.com" ContentHash="npoqmIVhoki8_72gg9s9kQ" DesignTimeRectangle="905, 582, 109, 23" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" Guid="ebe0066e-a5f4-413a-8e36-b6f79524ed18" InformativeScreenshot="8e70fb649e756cda2ddff4acaa9d35dd.jpg" Reference="80WURrXF-UO_FDDSxx5f6w/HAPwLJBhvUaFhxjOEpkjHw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SHA1 online' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
               </uix:NSelectItem.Target>
             </uix:NSelectItem>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'hash'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6e6d03bc-a8bf-4d83-8e29-b014b972a8cb" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="sha1-online.com" ContentHash="rpPEAVVM70GJ-FhDGgZCYw" DesignTimeRectangle="1138, 528, 58, 27" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" Guid="6277b1d6-544b-4be8-a2d2-c2ff9acaa5b7" InformativeScreenshot="19a1096258f6ce7b9cda88fa28c043de.jpg" Reference="80WURrXF-UO_FDDSxx5f6w/fORzZtBfwUSU8rO_ccw2Dg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SHA1 online' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text '121433c029217dd32ee98a4…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,133.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="6e6d03bc-a8bf-4d83-8e29-b014b972a8cb" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="sha1-online.com" ContentHash="v7AAWLU96E6UUR8bmUsqKg" DesignTimeRectangle="760, 434, 610, 27" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='result-sha1' tag='SPAN' /&gt;" Guid="87d62347-317c-461a-ac2f-88b100dfc164" InformativeScreenshot="d405285729a5a1e792ae144d4aaf9b49.jpg" Reference="80WURrXF-UO_FDDSxx5f6w/Ws7LXBLpSkisVef0sCH5qQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SHA1 online' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NGetText.Target>
+              <uix:NGetText.TextString>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">out_SecurityHash</CSharpReference>
+                </OutArgument>
+              </uix:NGetText.TextString>
+            </uix:NGetText>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
