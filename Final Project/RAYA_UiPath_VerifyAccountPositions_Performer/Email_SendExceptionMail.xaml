@@ -94,7 +94,7 @@
       <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Email_SendExceptionMail" sap:VirtualizedContainerService.HintSize="739.6,757.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Email_SendExceptionMail" sap:VirtualizedContainerService.HintSize="726.4000000000001,757.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="exceptionReceiver" />
       <Variable x:TypeArguments="x:String" Name="exceptionSubject" />
@@ -149,7 +149,7 @@
       </uga:SendEmailConnections.Subject>
       <uga:SendEmailConnections.TextBody>
         <InArgument x:TypeArguments="x:String">
-          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">"ACME Dispatcher Exception:" + Environment.NewLine + in_ExceptionMessage</CSharpValue>
+          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">"ACME Performer Exception:" + Environment.NewLine + in_ExceptionMessage</CSharpValue>
         </InArgument>
       </uga:SendEmailConnections.TextBody>
       <uga:SendEmailConnections.To>
