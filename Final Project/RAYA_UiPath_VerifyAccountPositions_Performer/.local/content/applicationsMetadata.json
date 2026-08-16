@@ -13,19 +13,6 @@
       },
       "Arguments": null,
       "Version": null
-    },
-    {
-      "ApplicationType": "Edge",
-      "ExecutablePath": {
-        "Value": "msedge.exe",
-        "IsExpression": false
-      },
-      "Url": {
-        "Value": "https://www.sha1-online.com",
-        "IsExpression": false
-      },
-      "Arguments": null,
-      "Version": null
     }
   ]
 }

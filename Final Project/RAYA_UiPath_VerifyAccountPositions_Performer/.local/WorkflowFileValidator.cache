@@ -15,3 +15,12 @@ ACMEWeb_OpenWorkItemDetails.xaml|639224703026737537
 ACMEWeb_GetSecurityHash.xaml|639224719237094360
 ACMEWeb_UpdateWorkItemStatus.xaml|639224729192158719
 Main.xaml|638996668260000000
+Framework/KillAllProcesses.xaml|638996668260000000
+Framework/InitAllApplications.xaml|639223820390581606
+Framework/GetTransactionData.xaml|639223817535626588
+Framework/InitAllSettings.xaml|638996668260000000
+Framework/TakeScreenshot.xaml|638996668260000000
+Framework/CloseAllApplications.xaml|639224785344468019
+Framework/Process.xaml|639224771441339157
+Framework/SetTransactionStatus.xaml|638996668260000000
+Framework/RetryCurrentTransaction.xaml|638996668260000000

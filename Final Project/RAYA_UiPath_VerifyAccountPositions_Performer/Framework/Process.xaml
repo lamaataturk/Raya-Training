@@ -91,7 +91,7 @@
       <AssemblyReference>System.Private.Xml</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="720.4000000000001,2409.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="720.4000000000001,2584.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="securityHash" />
       <Variable x:TypeArguments="x:String" Name="clientCountry" />
@@ -99,6 +99,8 @@
       <Variable x:TypeArguments="x:String" Name="clientID" />
       <Variable x:TypeArguments="x:String" Name="clientInfoText" />
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="transactionData" />
+      <Variable x:TypeArguments="x:String" Name="system1Url" />
+      <Variable x:TypeArguments="x:String" Name="screenshotPath" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -132,6 +134,13 @@
         </InArgument>
       </ui:LogMessage.Message>
     </ui:LogMessage>
+    <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="System1_URL" CacheStrategy="None" DisplayName="Get Asset" FolderPath="Final RPA" sap:VirtualizedContainerService.HintSize="451.2,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+      <ui:GetRobotAsset.Value>
+        <OutArgument x:TypeArguments="x:String">
+          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">system1Url</CSharpReference>
+        </OutArgument>
+      </ui:GetRobotAsset.Value>
+    </ui:GetRobotAsset>
     <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="451.2,1785.6" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
         <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="449.6,755.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
@@ -146,7 +155,7 @@
                 <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">clientInfoText</CSharpReference>
               </OutArgument>
               <InArgument x:TypeArguments="x:String" x:Key="in_BaseURL">
-                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">in_Config["System1_URL"].ToString()</CSharpValue>
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20">system1Url</CSharpValue>
               </InArgument>
               <InArgument x:TypeArguments="x:String" x:Key="in_WIID">
                 <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">transactionData["WIID"].ToString()</CSharpValue>
@@ -191,7 +200,7 @@
                 <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">securityHash</CSharpValue>
               </InArgument>
               <InArgument x:TypeArguments="x:String" x:Key="in_BaseURL">
-                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">in_Config["System1_URL"].ToString()</CSharpValue>
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_21">system1Url</CSharpValue>
               </InArgument>
               <InArgument x:TypeArguments="x:String" x:Key="in_WIID">
                 <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">transactionData["WIID"].ToString()</CSharpValue>
@@ -207,9 +216,6 @@
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
             <Sequence DisplayName="Catch" sap:VirtualizedContainerService.HintSize="449.6,808.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
-              <Sequence.Variables>
-                <Variable x:TypeArguments="x:String" Name="screenshotPath" />
-              </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -225,7 +231,7 @@
               <Assign sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="Assign_2">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">
-                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">screenshotPath</CSharpReference>
+                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_10">screenshotPath</CSharpReference>
                   </OutArgument>
                 </Assign.To>
                 <Assign.Value>
