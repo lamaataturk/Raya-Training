@@ -117,6 +117,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
       <AssemblyReference>System.Linq.Async</AssemblyReference>
       <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="ACMEWeb_ExtractWorkItems" sap:VirtualizedContainerService.HintSize="754.8000000000001,708" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -160,10 +161,15 @@
                 </InArgument>
               </uix:NGoToUrl.Url>
             </uix:NGoToUrl>
-            <uix:NGetText DisplayName="Get Text 'Client ID BL17488 Clie…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,133.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="d103b821-0e6b-47f3-83e3-169acaeb6474" Version="V5">
+            <uix:NGetText DisplayName="Get Client Details" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,133.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="d103b821-0e6b-47f3-83e3-169acaeb6474" Version="V5">
               <uix:NGetText.Target>
                 <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items/110612050" ContentHash="RgbrRSlIz0mY8z66XytPYw" DesignTimeRectangle="383, 524, 466, 75" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" Guid="c8e05ce5-22a3-4054-9f69-d99830e2f4bb" InformativeScreenshot="66e4d5347cf5619fa6f656d0fa35acda.jpg" Reference="80WURrXF-UO_FDDSxx5f6w/9fJbRdXeAkm4cVd73VOMRw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
               </uix:NGetText.Target>
+              <uix:NGetText.TextString>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String">out_ClientInfoText</CSharpReference>
+                </OutArgument>
+              </uix:NGetText.TextString>
             </uix:NGetText>
           </Sequence>
         </ActivityAction>
