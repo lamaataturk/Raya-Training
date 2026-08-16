@@ -1,0 +1,14 @@
+﻿{
+  "Name": "sha-1",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "HAPwLJBhvUaFhxjOEpkjHw",
+  "Reference": "80WURrXF-UO_FDDSxx5f6w/HAPwLJBhvUaFhxjOEpkjHw",
+  "ParentRef": "80WURrXF-UO_FDDSxx5f6w/PUqJ1e1fG0CYD5EvEdJuyw",
+  "Created": "2026-08-16T10:04:01.9536554Z",
+  "Updated": "2026-08-16T10:04:01.9536554Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
