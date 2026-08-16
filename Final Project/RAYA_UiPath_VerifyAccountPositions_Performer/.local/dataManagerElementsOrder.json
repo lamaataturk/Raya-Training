@@ -75,8 +75,16 @@
     {
       "Path": "ACMEWeb_ParseClientInfo.xaml",
       "SortBy": 0,
+      "VariablesSectionElementsOrder": null,
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Process.xaml",
+      "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "rawClientInfoText&Sequence_3"
+        "clientInfoText&Sequence_2"
       ],
       "ArgumentsSectionElementsOrder": null,
       "ConstantsSectionElementsOrder": null,

@@ -117,6 +117,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
       <AssemblyReference>System.Linq.Async</AssemblyReference>
       <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="ACMEWeb_ExtractWorkItems" sap:VirtualizedContainerService.HintSize="720.4000000000001,708" sap2010:WorkflowViewState.IdRef="Sequence_1">
