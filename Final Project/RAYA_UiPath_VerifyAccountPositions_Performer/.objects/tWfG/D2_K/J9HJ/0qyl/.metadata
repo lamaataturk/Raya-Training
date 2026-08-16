@@ -1,0 +1,13 @@
+﻿{
+  "Name": "--- ---OpenRejectedComp…",
+  "Type": "Element",
+  "Id": "0qylMeWJQ0ysucJTat2Z8Q",
+  "Reference": "80WURrXF-UO_FDDSxx5f6w/0qylMeWJQ0ysucJTat2Z8Q",
+  "ParentRef": "80WURrXF-UO_FDDSxx5f6w/J9HJcXQJLkWmofNBskMSKA",
+  "Created": "2026-08-16T10:26:26.5731554Z",
+  "Updated": "2026-08-16T10:26:26.5731554Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
