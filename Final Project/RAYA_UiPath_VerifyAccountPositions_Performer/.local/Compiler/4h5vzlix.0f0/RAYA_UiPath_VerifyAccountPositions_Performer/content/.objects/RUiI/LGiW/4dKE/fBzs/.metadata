@@ -1,0 +1,14 @@
+﻿{
+  "Name": "WindowsForms10.EDIT.app…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "fBzsnlgx8USfrBEtU3mr2Q",
+  "Reference": "80WURrXF-UO_FDDSxx5f6w/fBzsnlgx8USfrBEtU3mr2Q",
+  "ParentRef": "80WURrXF-UO_FDDSxx5f6w/4dKEVyTB3UOPrEPuL31pGg",
+  "Created": "2026-08-08T22:43:10.0705844Z",
+  "Updated": "2026-08-08T22:43:10.0705844Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "version": "2.0",
+  "resources": [
+    {
+      "activityDisplayName": "Get Asset",
+      "activityId": "GetRobotAsset_1",
+      "resource": "asset",
+      "key": "Final RPA.SHA1_URL",
+      "id": "assetFinal RPA.SHA1_URLFinal RPAFalseSHA1_URLFalse",
+      "value": {
+        "folderPath": {
+          "defaultValue": "Final RPA",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "SHA1_URL",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    },
+    {
+      "activityDisplayName": "Get ACME Credential",
+      "activityId": "GetRobotCredential_1",
+      "resource": "asset",
+      "key": "Final RPA.ACME_Credential",
+      "id": "assetFinal RPA.ACME_CredentialFinal RPAFalseACME_CredentialFalse",
+      "value": {
+        "folderPath": {
+          "defaultValue": "Final RPA",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "ACME_Credential",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    },
+    {
+      "activityDisplayName": "Get Asset",
+      "activityId": "GetRobotAsset_1",
+      "resource": "asset",
+      "key": "Final RPA.ScreenshotsFolderPath",
+      "id": "assetFinal RPA.ScreenshotsFolderPathFinal RPAFalseScreenshotsFolderPathFalse",
+      "value": {
+        "folderPath": {
+          "defaultValue": "Final RPA",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "ScreenshotsFolderPath",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    },
+    {
+      "activityDisplayName": "Get Asset",
+      "activityId": "GetRobotAsset_2",
+      "resource": "asset",
+      "key": "Final RPA.ExceptionMail_Reciever",
+      "id": "assetFinal RPA.ExceptionMail_RecieverFinal RPAFalseExceptionMail_RecieverFalse",
+      "value": {
+        "folderPath": {
+          "defaultValue": "Final RPA",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "ExceptionMail_Reciever",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    },
+    {
+      "activityDisplayName": "Get Asset",
+      "activityId": "GetRobotAsset_3",
+      "resource": "asset",
+      "key": "Final RPA.ExceptionMail_Subject",
+      "id": "assetFinal RPA.ExceptionMail_SubjectFinal RPAFalseExceptionMail_SubjectFalse",
+      "value": {
+        "folderPath": {
+          "defaultValue": "Final RPA",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "ExceptionMail_Subject",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    },
+    {
+      "activityDisplayName": "Send Email",
+      "activityId": "SendEmailConnections_1",
+      "resource": "Connection",
+      "key": "d76a5931-67fa-4986-afa8-d03cdafe6a54",
+      "id": "Connectiond76a5931-67fa-4986-afa8-d03cdafe6a54d76a5931-67fa-4986-afa8-d03cdafe6a54False",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "d76a5931-67fa-4986-afa8-d03cdafe6a54",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2",
+        "Connector": "uipath-google-gmail",
+        "UseConnectionService": "True"
+      }
+    },
+    {
+      "activityDisplayName": "Get transaction item",
+      "activityId": "GetQueueItem_1",
+      "resource": "queue",
+      "key": "Final RPA.RAYA_VerifyAccountPositions",
+      "id": "queueFinal RPA.RAYA_VerifyAccountPositionsFinal RPAFalseRAYA_VerifyAccountPositionsFalse",
+      "value": {
+        "folderPath": {
+          "defaultValue": "Final RPA",
+          "isExpression": false,
+          "displayName": "Folder Path"
+        },
+        "name": {
+          "defaultValue": "RAYA_VerifyAccountPositions",
+          "isExpression": false,
+          "displayName": "Queue name"
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    },
+    {
+      "activityDisplayName": "Get Asset",
+      "activityId": "GetRobotAsset_1",
+      "resource": "asset",
+      "key": "Final RPA.System1_URL",
+      "id": "assetFinal RPA.System1_URLFinal RPAFalseSystem1_URLFalse",
+      "value": {
+        "folderPath": {
+          "defaultValue": "Final RPA",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "System1_URL",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    }
+  ]
+}
